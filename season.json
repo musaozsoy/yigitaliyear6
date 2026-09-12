@@ -148,5 +148,302 @@
    "file": "report-02.html",
    "title": "Match report · Matchday 2"
   }
- ]
+ ],
+ "spellings": {
+  "week": "2026-09-14",
+  "rule": "-cious / -tious",
+  "words": [
+   "gracious",
+   "precious",
+   "delicious",
+   "vicious",
+   "infectious",
+   "cautious",
+   "superstitious",
+   "leisure",
+   "harass",
+   "government"
+  ]
+ },
+ "extras": [
+  {
+   "id": "et1",
+   "date": "2026-09-13",
+   "file": "et01.html",
+   "title": "Extra Training 1 · Adverbs of time",
+   "homework": "English · Seesaw · adverbs & adverbials of time (3 tasks)"
+  },
+  {
+   "id": "et2",
+   "date": "2026-09-13",
+   "file": "et02.html",
+   "title": "Extra Training 2 · Place value to 10 million",
+   "homework": "Maths · counters, partitioning, value of a digit, matching"
+  }
+ ],
+ "wordcamps": [
+  {
+   "id": "wc1",
+   "date": "2026-09-13",
+   "file": "wc01.html",
+   "title": "Word Camp 1 · 15 season words + -cious/-tious"
+  }
+ ],
+ "wordbank": [
+  {
+   "word": "cautiously",
+   "source": "season",
+   "from": "md1",
+   "added": "2026-09-07",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "in a careful way, worried something might go wrong"
+  },
+  {
+   "word": "peculiar",
+   "source": "season",
+   "from": "md1",
+   "added": "2026-09-07",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "strange or unusual"
+  },
+  {
+   "word": "ominous",
+   "source": "season",
+   "from": "md1",
+   "added": "2026-09-07",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "making you feel something bad is about to happen"
+  },
+  {
+   "word": "muffled",
+   "source": "season",
+   "from": "md2",
+   "added": "2026-09-08",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "a quiet, unclear sound, as if covered"
+  },
+  {
+   "word": "frantically",
+   "source": "season",
+   "from": "md2",
+   "added": "2026-09-08",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "in a wild, hurried, panicky way"
+  },
+  {
+   "word": "deserted",
+   "source": "season",
+   "from": "md2",
+   "added": "2026-09-08",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "empty of people; everyone has left"
+  },
+  {
+   "word": "eerie",
+   "source": "season",
+   "from": "md3",
+   "added": "2026-09-09",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "strange and frightening in a quiet, creepy way"
+  },
+  {
+   "word": "rivalry",
+   "source": "season",
+   "from": "md3",
+   "added": "2026-09-09",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "competition between people who each want to be the best"
+  },
+  {
+   "word": "loyal",
+   "source": "season",
+   "from": "md3",
+   "added": "2026-09-09",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "always supporting someone, even when it's hard"
+  },
+  {
+   "word": "glimpse",
+   "source": "season",
+   "from": "md4",
+   "added": "2026-09-10",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "a very quick look at something"
+  },
+  {
+   "word": "bewildered",
+   "source": "season",
+   "from": "md4",
+   "added": "2026-09-10",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "completely confused"
+  },
+  {
+   "word": "reluctantly",
+   "source": "season",
+   "from": "md4",
+   "added": "2026-09-10",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "doing something you don't really want to do"
+  },
+  {
+   "word": "hesitate",
+   "source": "season",
+   "from": "md5",
+   "added": "2026-09-11",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "to pause before doing something because you're not sure"
+  },
+  {
+   "word": "fragile",
+   "source": "season",
+   "from": "md5",
+   "added": "2026-09-11",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "easily broken or damaged"
+  },
+  {
+   "word": "vanished",
+   "source": "season",
+   "from": "md5",
+   "added": "2026-09-11",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "disappeared suddenly and completely"
+  },
+  {
+   "word": "gracious",
+   "source": "school",
+   "from": "spelling wk1",
+   "added": "2026-09-12",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "kind and polite, even to people who lose to you"
+  },
+  {
+   "word": "precious",
+   "source": "school",
+   "from": "spelling wk1",
+   "added": "2026-09-12",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "worth a lot; very valuable to you"
+  },
+  {
+   "word": "delicious",
+   "source": "school",
+   "from": "spelling wk1",
+   "added": "2026-09-12",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "tastes wonderful"
+  },
+  {
+   "word": "vicious",
+   "source": "school",
+   "from": "spelling wk1",
+   "added": "2026-09-12",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "cruel and violent"
+  },
+  {
+   "word": "infectious",
+   "source": "school",
+   "from": "spelling wk1",
+   "added": "2026-09-12",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "spreads easily from one person to another"
+  },
+  {
+   "word": "cautious",
+   "source": "school",
+   "from": "spelling wk1",
+   "added": "2026-09-12",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "careful, not taking risks"
+  },
+  {
+   "word": "superstitious",
+   "source": "school",
+   "from": "spelling wk1",
+   "added": "2026-09-12",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "believing in luck, omens and signs"
+  },
+  {
+   "word": "leisure",
+   "source": "school",
+   "from": "spelling wk1",
+   "added": "2026-09-12",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "free time when you're not working"
+  },
+  {
+   "word": "harass",
+   "source": "school",
+   "from": "spelling wk1",
+   "added": "2026-09-12",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "to keep bothering or attacking someone"
+  },
+  {
+   "word": "government",
+   "source": "school",
+   "from": "spelling wk1",
+   "added": "2026-09-12",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "the group of people who run a country"
+  }
+ ],
+ "wordbank_rules": {
+  "secure": "passed meaning+spelling in 2 different Word Camps",
+  "miss": "any miss → status learning, passes reset to 0; stays in every Word Camp until secure",
+  "revision": "each Word Camp also re-tests 3 random secure words"
+ }
 }

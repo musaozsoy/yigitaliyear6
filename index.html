@@ -37,6 +37,12 @@ h1{font-size:44px;line-height:.95;margin:4px 0 14px}
 .fx .t{flex:1}.fx .t b{display:block}.fx .t span{font-size:13px;color:#c9d0e3}.fx .r{font-family:'Bebas Neue',Impact,sans-serif;font-size:24px;color:var(--gold2)}
 .chip{display:inline-block;background:rgba(255,255,255,.12);border-radius:999px;padding:4px 10px;font-size:13px;font-weight:700;margin:3px 3px 0 0}
 .links a{display:block;color:var(--gold2);font-weight:900;text-decoration:none;padding:8px 0;border-top:1px solid rgba(255,255,255,.12)}
+.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.tools button{font:inherit;font-weight:900;font-size:13px;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:12px 6px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:6px}
+.tools button span{font-size:26px;line-height:1}.tools button:active{background:rgba(255,255,255,.2)}
+.legend{display:flex;gap:14px;margin-top:10px;font-size:11px;color:#8a93ab}.legend span{display:flex;align-items:center;gap:5px}.legend i{width:8px;height:8px;border-radius:50%;display:inline-block}
+.shootbtn{display:flex;align-items:center;gap:12px;background:linear-gradient(90deg,#1e7a3a,#2a8f45);border:2px solid var(--gold2);border-radius:14px;padding:12px 14px;margin:10px 0;text-decoration:none;color:#fff}
+.shootbtn span{font-size:30px}.shootbtn b{display:block;font-family:'Bebas Neue',Impact,sans-serif;font-size:24px;font-weight:400;line-height:1}.shootbtn small{font-size:12px;color:#dff5e3;font-weight:700}
 footer{text-align:center;font-size:12px;color:#8a93ab;margin-top:20px}footer a{color:#8a93ab}
 </style>
 </head>
@@ -68,20 +74,42 @@ footer{text-align:center;font-size:12px;color:#8a93ab;margin-top:20px}footer a{c
   </div>
 
   <div class="panel">
+    <h2>Extra training</h2>
+    <div class="small">Warm-ups before school homework. Do these first, then Seesaw.</div>
+    <div id="extras"></div>
+  </div>
+
+  <div class="panel">
+    <h2>Word camp</h2>
+    <div class="small">Sundays: meaning · spelling · use.</div>
+    <div id="wordcamps"></div>
+    <div class="small" style="margin-top:10px">This week's school spellings:</div>
+    <div id="spellings"></div>
+  </div>
+
+  <div class="panel">
     <h2>Word bank</h2>
-    <div class="small">Every word you've signed this season.</div>
+    <div class="small" id="wbcount"></div>
+    <a class="shootbtn" href="shoot.html"><span>⚽</span><b>Shoot Words</b><small id="shootline">10 penalties · today</small></a>
     <div id="words"></div>
+    <div class="legend"><span><i style="background:rgba(255,255,255,.35)"></i>new</span><span><i style="background:#d98a1a"></i>learning</span><span><i style="background:#2a8f45"></i>secure</span></div>
   </div>
 
   <div class="panel links">
     <h2>Club files</h2>
     <a href="scouting.html">📋 Scouting report 2026/27</a>
     <div id="reports"></div>
-    <a href="#" onclick="saveFile();return false">💾 Download season file (JSON)</a>
-    <a href="#" onclick="sendSeasonToBaba();return false">📲 Send season to Baba</a>
-    <a href="#" onclick="shareSeason();return false">📤 Share season JSON</a>
-    <a href="#" onclick="document.getElementById('loadInp').click();return false">📂 Load season file</a>
+  </div>
+
+  <div class="panel">
+    <h2>Season save</h2>
+    <div class="tools">
+      <button onclick="saveFile()"><span>💾</span>Download</button>
+      <button onclick="sendSeasonToBaba()"><span>📲</span>Send to Baba</button>
+      <button onclick="document.getElementById('loadInp').click()"><span>📂</span>Load</button>
+    </div>
     <input type="file" id="loadInp" accept=".json,application/json" style="display:none" onchange="loadFile(this)">
+
   </div>
   <footer>♥ Musa Baba Games · <a href="?reset=1" onclick="return confirm('Coach only: reset ALL season progress?')">coach reset</a></footer>
 </div>
@@ -98,7 +126,7 @@ const FIXTURES=[
  {id:"md7",n:7,date:"2026-09-13",title:"Champions League round",sub:"Week 1 review · Man of the Match",file:null}
 ];
 /* Embedded fallback (works offline / file://). season.json on the server wins when reachable. */
-const EMBED={"season": "2026/27", "player": "Yigit Ali", "updated": "2026-09-12", "levels": [["Castilla", 0, 500], ["First XI", 500, 1500], ["Captain", 1500, 3000], ["Ballon d'Or", 3000, 5000]], "days": {"md1": {"n": 1, "date": "2026-09-07", "title": "Pre-season Trials", "total": 320, "words": ["cautiously", "peculiar", "ominous"], "sections": {"Reading": "6/6", "Words": "3/3", "Maths": "9/10", "Grammar": "6/8", "Science": "5/5", "Writing VAR": "3/6"}, "note": "Ideas GD; accuracy below expected. Q3 percentages blank."}, "md2": {"n": 2, "date": "2026-09-08", "title": "VAR Training", "total": 210, "words": ["muffled", "frantically", "deserted"], "sections": {"Notebook": "1/3", "Drills": "7/8", "Words": "3/3", "Writing VAR": "5/6", "Honest VAR": "+50"}, "note": "All 4 speech rules applied. Rule 5 missing. '!?' repeat. 45 words, no new word."}, "md3": {"n": 3, "date": "2026-09-09", "title": "Chapter 2", "total": 180, "words": ["eerie", "rivalry", "loyal"], "sections": {"VAR": "3/3", "Reading": "5/5", "WW1 causes": "6/6", "Words": "3/3", "Point+Evidence": "1/3", "Referee": "—"}, "note": "17/17 quizzes. Q6 2/2, Q7 evidence without point. Late finish 22:07."}, "md4": {"n": 4, "date": "2026-09-10", "title": "Numbers Day", "total": 250, "words": ["glimpse", "bewildered", "reluctantly"], "sections": {"VAR": "2/2", "Arithmetic": "9/10", "Percentages": "4/6", "Apostrophes": "5/6", "Words": "3/3", "Notebook": "2/2", "Referee": "—"}, "note": "Percentages gap remains. Notebook unverified (no referee/photo)."}, "md5": {"n": 5, "date": "2026-09-11", "title": "Science Day", "total": 240, "words": ["hesitate", "fragile", "vanished"], "sections": {"VAR": "3/3", "The heart": "7/8", "Britain at war": "4/4", "Chapter 3": "4/4", "Words": "3/3", "Notebook": "3/3", "Referee": "—"}, "note": "Q5 first full Point+Evidence. Pulse experiment numbers implausible (22/31) — re-run Sunday. Heart Q3 arteries/veins."}}, "reports": [{"date": "2026-09-11", "file": "report-05.html", "title": "Match report · Matchday 5"}, {"date": "2026-09-10", "file": "report-04.html", "title": "Match report · Matchday 4"}, {"date": "2026-09-09", "file": "report-03.html", "title": "Match report · Matchday 3"}, {"date": "2026-09-08", "file": "report-02.html", "title": "Match report · Matchday 2"}]};
+const EMBED={"season": "2026/27", "player": "Yigit Ali", "updated": "2026-09-12", "levels": [["Castilla", 0, 500], ["First XI", 500, 1500], ["Captain", 1500, 3000], ["Ballon d'Or", 3000, 5000]], "days": {"md1": {"n": 1, "date": "2026-09-07", "title": "Pre-season Trials", "total": 320, "words": ["cautiously", "peculiar", "ominous"], "sections": {"Reading": "6/6", "Words": "3/3", "Maths": "9/10", "Grammar": "6/8", "Science": "5/5", "Writing VAR": "3/6"}, "note": "Ideas GD; accuracy below expected. Q3 percentages blank."}, "md2": {"n": 2, "date": "2026-09-08", "title": "VAR Training", "total": 210, "words": ["muffled", "frantically", "deserted"], "sections": {"Notebook": "1/3", "Drills": "7/8", "Words": "3/3", "Writing VAR": "5/6", "Honest VAR": "+50"}, "note": "All 4 speech rules applied. Rule 5 missing. '!?' repeat. 45 words, no new word."}, "md3": {"n": 3, "date": "2026-09-09", "title": "Chapter 2", "total": 180, "words": ["eerie", "rivalry", "loyal"], "sections": {"VAR": "3/3", "Reading": "5/5", "WW1 causes": "6/6", "Words": "3/3", "Point+Evidence": "1/3", "Referee": "—"}, "note": "17/17 quizzes. Q6 2/2, Q7 evidence without point. Late finish 22:07."}, "md4": {"n": 4, "date": "2026-09-10", "title": "Numbers Day", "total": 250, "words": ["glimpse", "bewildered", "reluctantly"], "sections": {"VAR": "2/2", "Arithmetic": "9/10", "Percentages": "4/6", "Apostrophes": "5/6", "Words": "3/3", "Notebook": "2/2", "Referee": "—"}, "note": "Percentages gap remains. Notebook unverified (no referee/photo)."}, "md5": {"n": 5, "date": "2026-09-11", "title": "Science Day", "total": 240, "words": ["hesitate", "fragile", "vanished"], "sections": {"VAR": "3/3", "The heart": "7/8", "Britain at war": "4/4", "Chapter 3": "4/4", "Words": "3/3", "Notebook": "3/3", "Referee": "—"}, "note": "Q5 first full Point+Evidence. Pulse experiment numbers implausible (22/31) — re-run Sunday. Heart Q3 arteries/veins."}}, "reports": [{"date": "2026-09-11", "file": "report-05.html", "title": "Match report · Matchday 5"}, {"date": "2026-09-10", "file": "report-04.html", "title": "Match report · Matchday 4"}, {"date": "2026-09-09", "file": "report-03.html", "title": "Match report · Matchday 3"}, {"date": "2026-09-08", "file": "report-02.html", "title": "Match report · Matchday 2"}], "spellings": {"week": "2026-09-14", "rule": "-cious / -tious", "words": ["gracious", "precious", "delicious", "vicious", "infectious", "cautious", "superstitious", "leisure", "harass", "government"]}, "extras": [{"id": "et1", "date": "2026-09-13", "file": "et01.html", "title": "Extra Training 1 · Adverbs of time", "homework": "English · Seesaw · adverbs & adverbials of time (3 tasks)"}, {"id": "et2", "date": "2026-09-13", "file": "et02.html", "title": "Extra Training 2 · Place value to 10 million", "homework": "Maths · counters, partitioning, value of a digit, matching"}], "wordcamps": [{"id": "wc1", "date": "2026-09-13", "file": "wc01.html", "title": "Word Camp 1 · 15 season words + -cious/-tious"}], "wordbank": [{"word": "cautiously", "source": "season", "from": "md1", "added": "2026-09-07", "status": "new", "passes": 0, "misses": 0, "def": "in a careful way, worried something might go wrong"}, {"word": "peculiar", "source": "season", "from": "md1", "added": "2026-09-07", "status": "new", "passes": 0, "misses": 0, "def": "strange or unusual"}, {"word": "ominous", "source": "season", "from": "md1", "added": "2026-09-07", "status": "new", "passes": 0, "misses": 0, "def": "making you feel something bad is about to happen"}, {"word": "muffled", "source": "season", "from": "md2", "added": "2026-09-08", "status": "new", "passes": 0, "misses": 0, "def": "a quiet, unclear sound, as if covered"}, {"word": "frantically", "source": "season", "from": "md2", "added": "2026-09-08", "status": "new", "passes": 0, "misses": 0, "def": "in a wild, hurried, panicky way"}, {"word": "deserted", "source": "season", "from": "md2", "added": "2026-09-08", "status": "new", "passes": 0, "misses": 0, "def": "empty of people; everyone has left"}, {"word": "eerie", "source": "season", "from": "md3", "added": "2026-09-09", "status": "new", "passes": 0, "misses": 0, "def": "strange and frightening in a quiet, creepy way"}, {"word": "rivalry", "source": "season", "from": "md3", "added": "2026-09-09", "status": "new", "passes": 0, "misses": 0, "def": "competition between people who each want to be the best"}, {"word": "loyal", "source": "season", "from": "md3", "added": "2026-09-09", "status": "new", "passes": 0, "misses": 0, "def": "always supporting someone, even when it's hard"}, {"word": "glimpse", "source": "season", "from": "md4", "added": "2026-09-10", "status": "new", "passes": 0, "misses": 0, "def": "a very quick look at something"}, {"word": "bewildered", "source": "season", "from": "md4", "added": "2026-09-10", "status": "new", "passes": 0, "misses": 0, "def": "completely confused"}, {"word": "reluctantly", "source": "season", "from": "md4", "added": "2026-09-10", "status": "new", "passes": 0, "misses": 0, "def": "doing something you don't really want to do"}, {"word": "hesitate", "source": "season", "from": "md5", "added": "2026-09-11", "status": "new", "passes": 0, "misses": 0, "def": "to pause before doing something because you're not sure"}, {"word": "fragile", "source": "season", "from": "md5", "added": "2026-09-11", "status": "new", "passes": 0, "misses": 0, "def": "easily broken or damaged"}, {"word": "vanished", "source": "season", "from": "md5", "added": "2026-09-11", "status": "new", "passes": 0, "misses": 0, "def": "disappeared suddenly and completely"}, {"word": "gracious", "source": "school", "from": "spelling wk1", "added": "2026-09-12", "status": "new", "passes": 0, "misses": 0, "def": "kind and polite, even to people who lose to you"}, {"word": "precious", "source": "school", "from": "spelling wk1", "added": "2026-09-12", "status": "new", "passes": 0, "misses": 0, "def": "worth a lot; very valuable to you"}, {"word": "delicious", "source": "school", "from": "spelling wk1", "added": "2026-09-12", "status": "new", "passes": 0, "misses": 0, "def": "tastes wonderful"}, {"word": "vicious", "source": "school", "from": "spelling wk1", "added": "2026-09-12", "status": "new", "passes": 0, "misses": 0, "def": "cruel and violent"}, {"word": "infectious", "source": "school", "from": "spelling wk1", "added": "2026-09-12", "status": "new", "passes": 0, "misses": 0, "def": "spreads easily from one person to another"}, {"word": "cautious", "source": "school", "from": "spelling wk1", "added": "2026-09-12", "status": "new", "passes": 0, "misses": 0, "def": "careful, not taking risks"}, {"word": "superstitious", "source": "school", "from": "spelling wk1", "added": "2026-09-12", "status": "new", "passes": 0, "misses": 0, "def": "believing in luck, omens and signs"}, {"word": "leisure", "source": "school", "from": "spelling wk1", "added": "2026-09-12", "status": "new", "passes": 0, "misses": 0, "def": "free time when you're not working"}, {"word": "harass", "source": "school", "from": "spelling wk1", "added": "2026-09-12", "status": "new", "passes": 0, "misses": 0, "def": "to keep bothering or attacking someone"}, {"word": "government", "source": "school", "from": "spelling wk1", "added": "2026-09-12", "status": "new", "passes": 0, "misses": 0, "def": "the group of people who run a country"}], "wordbank_rules": {"secure": "passed meaning+spelling in 2 different Word Camps", "miss": "any miss → status learning, passes reset to 0; stays in every Word Camp until secure", "revision": "each Word Camp also re-tests 3 random secure words"}};
 let SEASON=EMBED;
 const KEY="ya_season_v1";
 function render(){
@@ -115,7 +143,7 @@ document.getElementById("next").textContent=`${hi-season} points to ${level(hi)[
 document.getElementById("ovr").textContent=85+Math.min(10,Math.floor(season/400));
 /* week strip Mon–Sun */
 const today=new Date();const dow=(today.getDay()+6)%7;const mon=new Date(today);mon.setDate(today.getDate()-dow);
-const wk=document.getElementById("week");["Mon","Tue","Wed","Thu","Fri","Sat","Sun"].forEach((n,i)=>{const d=new Date(mon);d.setDate(mon.getDate()+i);const iso=d.toISOString().slice(0,10);const day=Object.values(st.days).find(x=>x.date===iso);
+const wk=document.getElementById("week");["Mon","Tue","Wed","Thu","Fri","Sat","Sun"].forEach((n,i)=>{const d=new Date(mon);d.setDate(mon.getDate()+i);const iso=d.toISOString().slice(0,10);const dd=Object.values(st.days).filter(x=>x.date===iso);const day=dd.length?{total:dd.reduce((a,x)=>a+(x.total||0),0)}:null;
  const el=document.createElement("div");el.className="day"+(day?" on":"")+(i===dow?" today":"");el.innerHTML=`<span>${n}</span><b>${day?day.total:"–"}</b>`;wk.appendChild(el);});
 /* fixtures */
 const fx=document.getElementById("fixtures");
@@ -123,10 +151,18 @@ FIXTURES.forEach(f=>{const d=st.days[f.id];const dt=new Date(f.date+"T12:00");co
  const a=document.createElement(f.file&&!d?"a":"div");a.className="fx"+(d?" done":f.file?"":" locked");if(f.file&&!d)a.href=f.file;
  a.innerHTML=`<div class="d">${dt.getDate()}<small>${lab}</small></div><div class="t"><b>Matchday ${f.n} · ${f.title}</b><span>${f.sub}</span></div><div class="r">${d?d.total:f.file?"▶":"🔒"}</div>`;fx.appendChild(a);});
 /* words */
-const words=[...new Set(Object.values(st.days).sort((a,b)=>a.n-b.n).flatMap(d=>d.words||[]))];
-document.getElementById("words").innerHTML=words.map(w=>`<span class="chip">${w}</span>`).join("")||"<span class='small'>No words yet.</span>";
+const pool=(SEASON.wordbank||[]).slice();const seen=new Set(pool.map(x=>x.word));
+Object.values(st.days).sort((a,b)=>a.n-b.n).forEach(d=>(d.words||[]).forEach(w=>{if(!seen.has(w)){seen.add(w);pool.push({word:w,source:"season",status:"new"})}}));
+const col={new:"rgba(255,255,255,.12)",learning:"rgba(217,138,26,.35)",secure:"rgba(30,122,58,.45)"};
+document.getElementById("words").innerHTML=pool.map(x=>`<span class="chip" style="background:${col[x.status]||col.new}" title="${x.source}">${x.word}</span>`).join("")||"<span class='small'>No words yet.</span>";
+try{const sw=JSON.parse(localStorage.getItem("ya_shoot_v1"));const td=new Date().toISOString().slice(0,10);if(sw&&sw.date===td)document.getElementById("shootline").textContent=sw.shots>=10?`Today: ${sw.goals}/10 · back tomorrow`:`Today: ${sw.goals} goals, ${10-sw.shots} penalties left`;}catch(e){}
+const cnt=s=>pool.filter(x=>x.status===s).length;document.getElementById("wbcount").textContent=`${pool.length} words in the pool · ${cnt("secure")} secure · ${cnt("learning")} learning · ${cnt("new")} new`;
 /* reports */
 document.getElementById("reports").innerHTML=REPORTS.map(r=>`<a href="${r.file}">📰 ${r.title}</a>`).join("");
+const row=(f,icon)=>{const d=st.days[f.id];const dt=new Date(f.date+"T12:00");const a=document.createElement(d?"div":"a");a.className="fx"+(d?" done":"");if(!d)a.href=f.file;a.innerHTML=`<div class="d">${dt.getDate()}<small>${dt.toLocaleDateString("en-GB",{weekday:"short"})}</small></div><div class="t"><b>${icon} ${f.title}</b><span>${f.homework||f.sub||""}</span></div><div class="r">${d?d.total:"▶"}</div>`;return a;};
+const ex=document.getElementById("extras");(SEASON.extras||[]).forEach(f=>ex.appendChild(row(f,"🏋️")));if(!ex.children.length)ex.innerHTML="<span class='small'>No homework warm-ups yet.</span>";
+const wc=document.getElementById("wordcamps");(SEASON.wordcamps||[]).forEach(f=>wc.appendChild(row(f,"🏕️")));
+document.getElementById("spellings").innerHTML=((SEASON.spellings||{}).words||[]).map(w=>`<span class="chip" style="background:rgba(201,162,39,.25)">${w}</span>`).join("");
 }
 fetch("season.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.days)SEASON=j;}).catch(()=>{}).finally(render);
 
@@ -135,7 +171,6 @@ function seasonText(){let st={days:{}};try{st=JSON.parse(localStorage.getItem(KE
 function saveFile(){const text=seasonText();const name=`yigit-season-${new Date().toISOString().slice(0,10)}.json`;const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([text],{type:"application/json"}));a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1000);}
 const COACH_WHATSAPP="447341974350";
 function sendSeasonToBaba(){window.location.href="https://wa.me/"+COACH_WHATSAPP+"?text="+encodeURIComponent(seasonText());}
-function shareSeason(){const text=seasonText();if(navigator.share)navigator.share({title:"Season save",text:text}).catch(()=>{});else if(navigator.clipboard)navigator.clipboard.writeText(text).then(()=>alert("Copied ✓"));}
 function loadFile(inp){
   const f=inp.files[0];if(!f)return;const rd=new FileReader();
   rd.onload=()=>{try{const j=JSON.parse(rd.result);const data=j.data||j;if(!data.days)throw 0;
