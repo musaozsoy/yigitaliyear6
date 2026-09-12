@@ -1,0 +1,4 @@
+[[headers]]
+  for = "/season.json"
+  [headers.values]
+    Cache-Control = "no-cache"

@@ -1,0 +1,152 @@
+{
+ "season": "2026/27",
+ "player": "Yigit Ali",
+ "updated": "2026-09-12",
+ "levels": [
+  [
+   "Castilla",
+   0,
+   500
+  ],
+  [
+   "First XI",
+   500,
+   1500
+  ],
+  [
+   "Captain",
+   1500,
+   3000
+  ],
+  [
+   "Ballon d'Or",
+   3000,
+   5000
+  ]
+ ],
+ "days": {
+  "md1": {
+   "n": 1,
+   "date": "2026-09-07",
+   "title": "Pre-season Trials",
+   "total": 320,
+   "words": [
+    "cautiously",
+    "peculiar",
+    "ominous"
+   ],
+   "sections": {
+    "Reading": "6/6",
+    "Words": "3/3",
+    "Maths": "9/10",
+    "Grammar": "6/8",
+    "Science": "5/5",
+    "Writing VAR": "3/6"
+   },
+   "note": "Ideas GD; accuracy below expected. Q3 percentages blank."
+  },
+  "md2": {
+   "n": 2,
+   "date": "2026-09-08",
+   "title": "VAR Training",
+   "total": 210,
+   "words": [
+    "muffled",
+    "frantically",
+    "deserted"
+   ],
+   "sections": {
+    "Notebook": "1/3",
+    "Drills": "7/8",
+    "Words": "3/3",
+    "Writing VAR": "5/6",
+    "Honest VAR": "+50"
+   },
+   "note": "All 4 speech rules applied. Rule 5 missing. '!?' repeat. 45 words, no new word."
+  },
+  "md3": {
+   "n": 3,
+   "date": "2026-09-09",
+   "title": "Chapter 2",
+   "total": 180,
+   "words": [
+    "eerie",
+    "rivalry",
+    "loyal"
+   ],
+   "sections": {
+    "VAR": "3/3",
+    "Reading": "5/5",
+    "WW1 causes": "6/6",
+    "Words": "3/3",
+    "Point+Evidence": "1/3",
+    "Referee": "—"
+   },
+   "note": "17/17 quizzes. Q6 2/2, Q7 evidence without point. Late finish 22:07."
+  },
+  "md4": {
+   "n": 4,
+   "date": "2026-09-10",
+   "title": "Numbers Day",
+   "total": 250,
+   "words": [
+    "glimpse",
+    "bewildered",
+    "reluctantly"
+   ],
+   "sections": {
+    "VAR": "2/2",
+    "Arithmetic": "9/10",
+    "Percentages": "4/6",
+    "Apostrophes": "5/6",
+    "Words": "3/3",
+    "Notebook": "2/2",
+    "Referee": "—"
+   },
+   "note": "Percentages gap remains. Notebook unverified (no referee/photo)."
+  },
+  "md5": {
+   "n": 5,
+   "date": "2026-09-11",
+   "title": "Science Day",
+   "total": 240,
+   "words": [
+    "hesitate",
+    "fragile",
+    "vanished"
+   ],
+   "sections": {
+    "VAR": "3/3",
+    "The heart": "7/8",
+    "Britain at war": "4/4",
+    "Chapter 3": "4/4",
+    "Words": "3/3",
+    "Notebook": "3/3",
+    "Referee": "—"
+   },
+   "note": "Q5 first full Point+Evidence. Pulse experiment numbers implausible (22/31) — re-run Sunday. Heart Q3 arteries/veins."
+  }
+ },
+ "reports": [
+  {
+   "date": "2026-09-11",
+   "file": "report-05.html",
+   "title": "Match report · Matchday 5"
+  },
+  {
+   "date": "2026-09-10",
+   "file": "report-04.html",
+   "title": "Match report · Matchday 4"
+  },
+  {
+   "date": "2026-09-09",
+   "file": "report-03.html",
+   "title": "Match report · Matchday 3"
+  },
+  {
+   "date": "2026-09-08",
+   "file": "report-02.html",
+   "title": "Match report · Matchday 2"
+  }
+ ]
+}
