@@ -149,7 +149,7 @@ p{margin:0 0 12px}.lead{color:#4b5263}
 <section class="screen" data-title="Full-time">
   <div class="ft"><div class="kicker" style="color:var(--gold2)">Full-time</div><div class="total" id="total">0</div><div class="lv" id="lvline"></div><div class="bar"><i id="bar" style="width:0%"></i></div><div class="lv" id="seasonline"></div><div class="rgrid" id="rgrid"></div>
   <p class="note" style="color:#c9d0e3">Send the report, then a photo of Q6 and Q7 in your notebook.</p>
-  <button class="btn gold" onclick="shareReport()" style="width:100%;max-width:none">Share JSON report</button><button class="btn" onclick="downloadReport()" style="width:100%;max-width:none;margin-top:8px;background:rgba(255,255,255,.15)">Download JSON file</button><button class="btn" onclick="copyReport()" style="width:100%;max-width:none;margin-top:8px;background:rgba(255,255,255,.15)">Copy JSON</button><textarea id="jsonout" readonly style="display:none;width:100%;margin-top:10px;height:140px;border-radius:10px;border:none;padding:10px;font:12px monospace;color:#1c2130;background:#fff"></textarea></div>
+  <button class="btn gold" onclick="sendToBaba()" style="width:100%;max-width:none;font-size:18px">📲 Send to Baba</button><button class="btn" onclick="shareReport()" style="width:100%;max-width:none;margin-top:8px;background:rgba(255,255,255,.15)">Share JSON report</button><button class="btn" onclick="downloadReport()" style="width:100%;max-width:none;margin-top:8px;background:rgba(255,255,255,.15)">Download JSON file</button><button class="btn" onclick="copyReport()" style="width:100%;max-width:none;margin-top:8px;background:rgba(255,255,255,.15)">Copy JSON</button><textarea id="jsonout" readonly style="display:none;width:100%;margin-top:10px;height:140px;border-radius:10px;border:none;padding:10px;font:12px monospace;color:#1c2130;background:#fff"></textarea></div>
   <p class="note" style="margin-top:14px;text-align:center">Tomorrow: arithmetic, percentages and the apostrophe that has escaped you since Year 4.</p>
 </section>
 
@@ -238,6 +238,8 @@ function finish(){
 }
 function reportObj(){const st=load();const d=st.days[MD.id];const season=Object.values(st.days).reduce((a,x)=>a+x.total,0);const rep={app:"ya-season",type:"matchday-report",md:MD.n,id:MD.id,date:MD.date,title:MD.title,total:d.total,sections:d.sections,wrong:{},words:MD.words,season_total_on_device:season,exported:new Date().toISOString()};Object.keys(wrong).forEach(k=>{if(wrong[k].length)rep.wrong[NAMES[k]||k]=wrong[k]});return rep;}
 function reportName(){return `md${String(MD.n).padStart(2,"0")}-${MD.date}.json`;}
+const COACH_WHATSAPP="447341974350";
+function sendToBaba(){const text=JSON.stringify(reportObj(),null,1);window.location.href="https://wa.me/"+COACH_WHATSAPP+"?text="+encodeURIComponent(text);}
 function shareReport(){const text=JSON.stringify(reportObj(),null,1);
   if(navigator.share){navigator.share({title:reportName(),text:text}).catch(()=>{});}
   else copyReport();}

@@ -78,6 +78,7 @@ footer{text-align:center;font-size:12px;color:#8a93ab;margin-top:20px}footer a{c
     <a href="scouting.html">📋 Scouting report 2026/27</a>
     <div id="reports"></div>
     <a href="#" onclick="saveFile();return false">💾 Download season file (JSON)</a>
+    <a href="#" onclick="sendSeasonToBaba();return false">📲 Send season to Baba</a>
     <a href="#" onclick="shareSeason();return false">📤 Share season JSON</a>
     <a href="#" onclick="document.getElementById('loadInp').click();return false">📂 Load season file</a>
     <input type="file" id="loadInp" accept=".json,application/json" style="display:none" onchange="loadFile(this)">
@@ -132,6 +133,8 @@ fetch("season.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(
 /* ---- Save / Load (JSON file, like Goal Matics) ---- */
 function seasonText(){let st={days:{}};try{st=JSON.parse(localStorage.getItem(KEY))||st}catch(e){}return JSON.stringify({app:"ya-season",exported:new Date().toISOString(),data:st},null,1);}
 function saveFile(){const text=seasonText();const name=`yigit-season-${new Date().toISOString().slice(0,10)}.json`;const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([text],{type:"application/json"}));a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1000);}
+const COACH_WHATSAPP="447341974350";
+function sendSeasonToBaba(){window.location.href="https://wa.me/"+COACH_WHATSAPP+"?text="+encodeURIComponent(seasonText());}
 function shareSeason(){const text=seasonText();if(navigator.share)navigator.share({title:"Season save",text:text}).catch(()=>{});else if(navigator.clipboard)navigator.clipboard.writeText(text).then(()=>alert("Copied ✓"));}
 function loadFile(inp){
   const f=inp.files[0];if(!f)return;const rd=new FileReader();
