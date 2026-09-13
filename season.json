@@ -1,7 +1,7 @@
 {
  "season": "2026/27",
  "player": "Yigit Ali",
- "updated": "2026-09-12",
+ "updated": "2026-09-13",
  "levels": [
   [
    "Castilla",
@@ -125,9 +125,28 @@
     "Referee": "—"
    },
    "note": "Q5 first full Point+Evidence. Pulse experiment numbers implausible (22/31) — re-run Sunday. Heart Q3 arteries/veins."
+  },
+  "md6": {
+   "n": 6,
+   "date": "2026-09-12",
+   "title": "Big Write",
+   "total": 220,
+   "words": [],
+   "sections": {
+    "Warm-up": "6/6",
+    "Model text": "4/4",
+    "VAR (8 criteria)": "7/8",
+    "Referee": "+50"
+   },
+   "note": "Simile, 2 perfect speech lines, rhetorical question, formal vocab. Wrong date (wrote 12 Sept not 15 Nov 1940), ~150 words (target 200-250), para 3 thin, fragment 'siren sound still audible', wailing/reassuring spelling."
   }
  },
  "reports": [
+  {
+   "date": "2026-09-12",
+   "file": "report-06.html",
+   "title": "Match report · Matchday 6 + Week 1 review"
+  },
   {
    "date": "2026-09-11",
    "file": "report-05.html",
@@ -439,11 +458,39 @@
    "passes": 0,
    "misses": 0,
    "def": "the group of people who run a country"
+  },
+  {
+   "word": "wailing",
+   "source": "season",
+   "from": "md6 big write",
+   "added": "2026-09-12",
+   "status": "learning",
+   "passes": 0,
+   "misses": 1,
+   "def": "making a long, high crying sound (like a siren)"
+  },
+  {
+   "word": "reassuring",
+   "source": "season",
+   "from": "md6 big write",
+   "added": "2026-09-12",
+   "status": "learning",
+   "passes": 0,
+   "misses": 1,
+   "def": "making someone feel less worried"
   }
  ],
  "wordbank_rules": {
   "secure": "passed meaning+spelling in 2 different Word Camps",
   "miss": "any miss → status learning, passes reset to 0; stays in every Word Camp until secure",
   "revision": "each Word Camp also re-tests 3 random secure words"
- }
+ },
+ "followups": [
+  "plural possessive apostrophe (players', fans', twins')",
+  "writing length: build paragraph 3 (After)",
+  "fragments: every sentence needs a verb",
+  "pulse experiment re-run with x2",
+  "'!?' habit",
+  "spellings: wailing, reassuring"
+ ]
 }
