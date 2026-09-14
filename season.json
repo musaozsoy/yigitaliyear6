@@ -139,9 +139,96 @@
     "Referee": "+50"
    },
    "note": "Simile, 2 perfect speech lines, rhetorical question, formal vocab. Wrong date (wrote 12 Sept not 15 Nov 1940), ~150 words (target 200-250), para 3 thin, fragment 'siren sound still audible', wailing/reassuring spelling."
+  },
+  "md7": {
+   "n": 7,
+   "date": "2026-09-13",
+   "title": "Champions League round",
+   "total": 150,
+   "words": [],
+   "sections": {
+    "VAR": "3/3",
+    "Week quiz": "6/8",
+    "Pulse": "3/3",
+    "Referee": "+30"
+   },
+   "note": "Wrong: twins' (4th), arteries (2nd). Pulse 61/117 vs Baba 63/98."
+  },
+  "wc1": {
+   "n": 7.1,
+   "date": "2026-09-13",
+   "title": "Word Camp 1",
+   "total": 225,
+   "kind": "wordcamp",
+   "words": [],
+   "sections": {
+    "Meaning": "10/10",
+    "Spelling": "95 pts",
+    "Use": "3/6"
+   },
+   "note": "School 10 all correct. Missed spelling: frantically, reluctantly, bewildered. Use missed: hesitate, delicious, superstitious."
+  },
+  "et1": {
+   "n": 7.2,
+   "date": "2026-09-13",
+   "title": "Extra Training 1 · Adverbs of time",
+   "total": 150,
+   "kind": "extra",
+   "words": [],
+   "sections": {
+    "Spot": "4/6",
+    "Fill": "5/6",
+    "Write": "3/3",
+    "Referee": "+30"
+   },
+   "note": "4 sentences correct structure. Errors: 'haven't did', 'Real madrids'."
+  },
+  "et2": {
+   "n": 7.3,
+   "date": "2026-09-13",
+   "title": "Extra Training 2 · Place value",
+   "total": 120,
+   "kind": "extra",
+   "words": [],
+   "sections": {
+    "Columns": "6/6",
+    "Partition": "4/6",
+    "Notebook": "2/2",
+    "Referee": "—"
+   },
+   "note": "Wrong: +200,000 (one column), lookalike matching. Drew digits not counters."
+  },
+  "sw-2026-09-12": {
+   "n": 100,
+   "date": "2026-09-12",
+   "title": "Shoot Words",
+   "total": 40,
+   "kind": "shoot",
+   "words": [],
+   "sections": {
+    "Goals": "4/10",
+    "Saved": "cautiously, vicious, leisure, ominous, deserted, delicious"
+   }
+  },
+  "sw-2026-09-13": {
+   "n": 100,
+   "date": "2026-09-13",
+   "title": "Shoot Words",
+   "total": 70,
+   "kind": "shoot",
+   "words": [],
+   "sections": {
+    "Goals": "7/10",
+    "Saved": "cautious, cautiously, harass"
+   }
   }
  },
  "reports": [
+  {
+   "date": "2026-09-13",
+   "file": "report-07.html",
+   "title": "Match report · Camp day + Captain"
+  },
   {
    "date": "2026-09-12",
    "file": "report-06.html",
@@ -214,9 +301,9 @@
    "source": "season",
    "from": "md1",
    "added": "2026-09-07",
-   "status": "new",
+   "status": "learning",
    "passes": 0,
-   "misses": 0,
+   "misses": 1,
    "def": "in a careful way, worried something might go wrong"
   },
   {
@@ -225,7 +312,7 @@
    "from": "md1",
    "added": "2026-09-07",
    "status": "new",
-   "passes": 0,
+   "passes": 1,
    "misses": 0,
    "def": "strange or unusual"
   },
@@ -234,9 +321,9 @@
    "source": "season",
    "from": "md1",
    "added": "2026-09-07",
-   "status": "new",
+   "status": "learning",
    "passes": 0,
-   "misses": 0,
+   "misses": 1,
    "def": "making you feel something bad is about to happen"
   },
   {
@@ -245,7 +332,7 @@
    "from": "md2",
    "added": "2026-09-08",
    "status": "new",
-   "passes": 0,
+   "passes": 1,
    "misses": 0,
    "def": "a quiet, unclear sound, as if covered"
   },
@@ -254,9 +341,9 @@
    "source": "season",
    "from": "md2",
    "added": "2026-09-08",
-   "status": "new",
+   "status": "learning",
    "passes": 0,
-   "misses": 0,
+   "misses": 1,
    "def": "in a wild, hurried, panicky way"
   },
   {
@@ -264,9 +351,9 @@
    "source": "season",
    "from": "md2",
    "added": "2026-09-08",
-   "status": "new",
+   "status": "learning",
    "passes": 0,
-   "misses": 0,
+   "misses": 1,
    "def": "empty of people; everyone has left"
   },
   {
@@ -275,7 +362,7 @@
    "from": "md3",
    "added": "2026-09-09",
    "status": "new",
-   "passes": 0,
+   "passes": 1,
    "misses": 0,
    "def": "strange and frightening in a quiet, creepy way"
   },
@@ -285,7 +372,7 @@
    "from": "md3",
    "added": "2026-09-09",
    "status": "new",
-   "passes": 0,
+   "passes": 1,
    "misses": 0,
    "def": "competition between people who each want to be the best"
   },
@@ -295,7 +382,7 @@
    "from": "md3",
    "added": "2026-09-09",
    "status": "new",
-   "passes": 0,
+   "passes": 1,
    "misses": 0,
    "def": "always supporting someone, even when it's hard"
   },
@@ -305,7 +392,7 @@
    "from": "md4",
    "added": "2026-09-10",
    "status": "new",
-   "passes": 0,
+   "passes": 1,
    "misses": 0,
    "def": "a very quick look at something"
   },
@@ -314,9 +401,9 @@
    "source": "season",
    "from": "md4",
    "added": "2026-09-10",
-   "status": "new",
+   "status": "learning",
    "passes": 0,
-   "misses": 0,
+   "misses": 1,
    "def": "completely confused"
   },
   {
@@ -324,9 +411,9 @@
    "source": "season",
    "from": "md4",
    "added": "2026-09-10",
-   "status": "new",
+   "status": "learning",
    "passes": 0,
-   "misses": 0,
+   "misses": 1,
    "def": "doing something you don't really want to do"
   },
   {
@@ -334,9 +421,9 @@
    "source": "season",
    "from": "md5",
    "added": "2026-09-11",
-   "status": "new",
+   "status": "learning",
    "passes": 0,
-   "misses": 0,
+   "misses": 1,
    "def": "to pause before doing something because you're not sure"
   },
   {
@@ -345,7 +432,7 @@
    "from": "md5",
    "added": "2026-09-11",
    "status": "new",
-   "passes": 0,
+   "passes": 1,
    "misses": 0,
    "def": "easily broken or damaged"
   },
@@ -355,7 +442,7 @@
    "from": "md5",
    "added": "2026-09-11",
    "status": "new",
-   "passes": 0,
+   "passes": 1,
    "misses": 0,
    "def": "disappeared suddenly and completely"
   },
@@ -365,7 +452,7 @@
    "from": "spelling wk1",
    "added": "2026-09-12",
    "status": "new",
-   "passes": 0,
+   "passes": 1,
    "misses": 0,
    "def": "kind and polite, even to people who lose to you"
   },
@@ -375,7 +462,7 @@
    "from": "spelling wk1",
    "added": "2026-09-12",
    "status": "new",
-   "passes": 0,
+   "passes": 1,
    "misses": 0,
    "def": "worth a lot; very valuable to you"
   },
@@ -384,9 +471,9 @@
    "source": "school",
    "from": "spelling wk1",
    "added": "2026-09-12",
-   "status": "new",
+   "status": "learning",
    "passes": 0,
-   "misses": 0,
+   "misses": 1,
    "def": "tastes wonderful"
   },
   {
@@ -394,9 +481,9 @@
    "source": "school",
    "from": "spelling wk1",
    "added": "2026-09-12",
-   "status": "new",
+   "status": "learning",
    "passes": 0,
-   "misses": 0,
+   "misses": 1,
    "def": "cruel and violent"
   },
   {
@@ -405,7 +492,7 @@
    "from": "spelling wk1",
    "added": "2026-09-12",
    "status": "new",
-   "passes": 0,
+   "passes": 1,
    "misses": 0,
    "def": "spreads easily from one person to another"
   },
@@ -414,9 +501,9 @@
    "source": "school",
    "from": "spelling wk1",
    "added": "2026-09-12",
-   "status": "new",
+   "status": "learning",
    "passes": 0,
-   "misses": 0,
+   "misses": 1,
    "def": "careful, not taking risks"
   },
   {
@@ -424,9 +511,9 @@
    "source": "school",
    "from": "spelling wk1",
    "added": "2026-09-12",
-   "status": "new",
+   "status": "learning",
    "passes": 0,
-   "misses": 0,
+   "misses": 1,
    "def": "believing in luck, omens and signs"
   },
   {
@@ -434,9 +521,9 @@
    "source": "school",
    "from": "spelling wk1",
    "added": "2026-09-12",
-   "status": "new",
+   "status": "learning",
    "passes": 0,
-   "misses": 0,
+   "misses": 1,
    "def": "free time when you're not working"
   },
   {
@@ -444,9 +531,9 @@
    "source": "school",
    "from": "spelling wk1",
    "added": "2026-09-12",
-   "status": "new",
+   "status": "learning",
    "passes": 0,
-   "misses": 0,
+   "misses": 1,
    "def": "to keep bothering or attacking someone"
   },
   {
@@ -455,7 +542,7 @@
    "from": "spelling wk1",
    "added": "2026-09-12",
    "status": "new",
-   "passes": 0,
+   "passes": 1,
    "misses": 0,
    "def": "the group of people who run a country"
   },
@@ -466,7 +553,7 @@
    "added": "2026-09-12",
    "status": "learning",
    "passes": 0,
-   "misses": 1,
+   "misses": 2,
    "def": "making a long, high crying sound (like a siren)"
   },
   {
@@ -476,8 +563,38 @@
    "added": "2026-09-12",
    "status": "learning",
    "passes": 0,
-   "misses": 1,
+   "misses": 2,
    "def": "making someone feel less worried"
+  },
+  {
+   "word": "exhausted",
+   "source": "season",
+   "from": "md8",
+   "added": "2026-09-14",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "extremely tired"
+  },
+  {
+   "word": "observed",
+   "source": "season",
+   "from": "md8",
+   "added": "2026-09-14",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "watched carefully; noticed"
+  },
+  {
+   "word": "ambitious",
+   "source": "season",
+   "from": "md8",
+   "added": "2026-09-14",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "wanting very much to succeed or achieve something big"
   }
  ],
  "wordbank_rules": {
@@ -486,11 +603,12 @@
   "revision": "each Word Camp also re-tests 3 random secure words"
  },
  "followups": [
-  "plural possessive apostrophe (players', fans', twins')",
-  "writing length: build paragraph 3 (After)",
-  "fragments: every sentence needs a verb",
-  "pulse experiment re-run with x2",
-  "'!?' habit",
-  "spellings: wailing, reassuring"
+  "plural possessive apostrophe — daily question until reflex",
+  "have/had + third form (done, gone, come)",
+  "arteries carry blood away",
+  "writing length: paragraph 3",
+  "fragments need a verb",
+  "'!?'",
+  "counters = dots, not digits"
  ]
 }
