@@ -1,7 +1,7 @@
 {
  "season": "2026/27",
  "player": "Yigit Ali",
- "updated": "2026-09-13",
+ "updated": "2026-10-18",
  "levels": [
   [
    "Castilla",
@@ -256,20 +256,31 @@
   }
  ],
  "spellings": {
-  "week": "2026-09-14",
-  "rule": "-cious / -tious",
+  "test": "2026-10-23",
+  "rule": "-able / -ible",
   "words": [
-   "gracious",
-   "precious",
-   "delicious",
-   "vicious",
-   "infectious",
-   "cautious",
-   "superstitious",
-   "leisure",
-   "harass",
-   "government"
-  ]
+   "adorable",
+   "applicable",
+   "considerably",
+   "tolerable",
+   "comfortable",
+   "reasonable",
+   "enjoyable",
+   "sacrifice",
+   "secretary",
+   "mischievous"
+  ],
+  "last_test": {
+   "date": "2026-10-09",
+   "score": "5/10",
+   "missed": [
+    "manageable",
+    "noticeable",
+    "committee",
+    "changeable",
+    "existence"
+   ]
+  }
  },
  "extras": [
   {
@@ -285,6 +296,20 @@
    "file": "et02.html",
    "title": "Extra Training 2 · Place value to 10 million",
    "homework": "Maths · counters, partitioning, value of a digit, matching"
+  },
+  {
+   "id": "et3",
+   "date": "2026-10-18",
+   "file": "et03.html",
+   "title": "Extra Training 3 · Grammar & punctuation",
+   "homework": "English · Seesaw · 9-question GPS sheet"
+  },
+  {
+   "id": "et4",
+   "date": "2026-10-18",
+   "file": "et04.html",
+   "title": "Extra Training 4 · Fractions +/−",
+   "homework": "Maths · Seesaw · 12 fraction sums"
   }
  ],
  "wordcamps": [
@@ -595,6 +620,156 @@
    "passes": 0,
    "misses": 0,
    "def": "wanting very much to succeed or achieve something big"
+  },
+  {
+   "word": "adorable",
+   "source": "school",
+   "from": "spelling 23 Oct",
+   "added": "2026-10-18",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "very sweet and lovable"
+  },
+  {
+   "word": "applicable",
+   "source": "school",
+   "from": "spelling 23 Oct",
+   "added": "2026-10-18",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "relevant; applies to the situation"
+  },
+  {
+   "word": "considerably",
+   "source": "school",
+   "from": "spelling 23 Oct",
+   "added": "2026-10-18",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "by a large amount"
+  },
+  {
+   "word": "tolerable",
+   "source": "school",
+   "from": "spelling 23 Oct",
+   "added": "2026-10-18",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "bearable; can be put up with"
+  },
+  {
+   "word": "comfortable",
+   "source": "school",
+   "from": "spelling 23 Oct",
+   "added": "2026-10-18",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "relaxed and at ease"
+  },
+  {
+   "word": "reasonable",
+   "source": "school",
+   "from": "spelling 23 Oct",
+   "added": "2026-10-18",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "fair and sensible"
+  },
+  {
+   "word": "enjoyable",
+   "source": "school",
+   "from": "spelling 23 Oct",
+   "added": "2026-10-18",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "giving pleasure"
+  },
+  {
+   "word": "sacrifice",
+   "source": "school",
+   "from": "spelling 23 Oct",
+   "added": "2026-10-18",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "to give something up for a greater good"
+  },
+  {
+   "word": "secretary",
+   "source": "school",
+   "from": "spelling 23 Oct",
+   "added": "2026-10-18",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "a person who keeps records and handles letters"
+  },
+  {
+   "word": "mischievous",
+   "source": "school",
+   "from": "spelling 23 Oct",
+   "added": "2026-10-18",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "playfully naughty"
+  },
+  {
+   "word": "manageable",
+   "source": "school",
+   "from": "spelling 9 Oct (missed)",
+   "added": "2026-10-18",
+   "status": "learning",
+   "passes": 0,
+   "misses": 1,
+   "def": "able to be dealt with"
+  },
+  {
+   "word": "noticeable",
+   "source": "school",
+   "from": "spelling 9 Oct (missed)",
+   "added": "2026-10-18",
+   "status": "learning",
+   "passes": 0,
+   "misses": 1,
+   "def": "easy to see or notice"
+  },
+  {
+   "word": "committee",
+   "source": "school",
+   "from": "spelling 9 Oct (missed)",
+   "added": "2026-10-18",
+   "status": "learning",
+   "passes": 0,
+   "misses": 1,
+   "def": "a group chosen to make decisions"
+  },
+  {
+   "word": "changeable",
+   "source": "school",
+   "from": "spelling 9 Oct (missed)",
+   "added": "2026-10-18",
+   "status": "learning",
+   "passes": 0,
+   "misses": 1,
+   "def": "likely to change"
+  },
+  {
+   "word": "existence",
+   "source": "school",
+   "from": "spelling 9 Oct (missed)",
+   "added": "2026-10-18",
+   "status": "learning",
+   "passes": 0,
+   "misses": 1,
+   "def": "the state of being real or alive"
   }
  ],
  "wordbank_rules": {
@@ -603,12 +778,62 @@
   "revision": "each Word Camp also re-tests 3 random secure words"
  },
  "followups": [
-  "plural possessive apostrophe — daily question until reflex",
-  "have/had + third form (done, gone, come)",
-  "arteries carry blood away",
+  "BOX RULE: one answer, last line of working, sense check",
+  "long division by 2-digit — daily until automatic",
+  "mixed number × whole number",
+  "plural possessive apostrophe",
+  "have/had + third form",
   "writing length: paragraph 3",
-  "fragments need a verb",
-  "'!?'",
-  "counters = dots, not digits"
- ]
+  "fragments need a verb"
+ ],
+ "arithmetic_paper": {
+  "date": "2026-10-13",
+  "paper": "2017 KS2 Paper 1 arithmetic",
+  "score": "23/40",
+  "lost_to_presentation": {
+   "marks": 10,
+   "questions": [
+    "Q3 messy mixed number",
+    "Q17 two answers in box",
+    "Q21 unreadable box",
+    "Q22 right working, wrong box (2)",
+    "Q27 unreadable",
+    "Q28 5/16 circled, 8 in box",
+    "Q29 207 beside, 120 in box",
+    "Q33 180 beside, 18000 in box",
+    "Q34 150 circled, 15000 in box"
+   ]
+  },
+  "genuine_gaps": {
+   "marks": 7,
+   "topics": [
+    "long division by 2-digit (Q20, Q36 — 4 marks)",
+    "mixed number × whole (Q35)",
+    "fraction × fraction confidence (Q15)",
+    "decimal × whole sense check (Q33)",
+    "% of amount under pressure (Q29, Q34)"
+   ]
+  },
+  "strengths": [
+   "column +/−",
+   "decimals +/−",
+   "short multiplication",
+   "long multiplication method",
+   "fraction +/− with common denominators",
+   "× ÷ by 10/100/1000",
+   "1% method"
+  ]
+ },
+ "spellingcamps": [
+  {
+   "id": "sp1",
+   "date": "2026-10-22",
+   "file": "sp01.html",
+   "title": "Spelling Camp 1 · -able/-ible + last week's five"
+  }
+ ],
+ "school_unit": {
+  "english": "One Day (Michael Rosen) — formal letter of thanks in role (Eugène to the Médards); vocab mat, synonyms/antonyms, phrases for a note of thanks, question starters",
+  "note": "Teacher pinned on Seesaw 18 Oct; Big Write 2 (Sat 24 Oct) = formal thank-you letter; daily words from the mat"
+ }
 }
