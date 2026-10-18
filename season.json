@@ -835,5 +835,32 @@
  "school_unit": {
   "english": "One Day (Michael Rosen) — formal letter of thanks in role (Eugène to the Médards); vocab mat, synonyms/antonyms, phrases for a note of thanks, question starters",
   "note": "Teacher pinned on Seesaw 18 Oct; Big Write 2 (Sat 24 Oct) = formal thank-you letter; daily words from the mat"
- }
+ },
+ "weeks": [
+  {
+   "n": 1,
+   "label": "Week 1",
+   "from": "2026-09-07",
+   "to": "2026-09-13"
+  },
+  {
+   "n": 2,
+   "label": "Week 2",
+   "from": "2026-09-14",
+   "to": "2026-10-17",
+   "note": "paused for a month"
+  },
+  {
+   "n": 2.5,
+   "label": "Comeback Camp",
+   "from": "2026-10-18",
+   "to": "2026-10-18"
+  },
+  {
+   "n": 3,
+   "label": "Week 3",
+   "from": "2026-10-19",
+   "to": "2026-10-25"
+  }
+ ]
 }
