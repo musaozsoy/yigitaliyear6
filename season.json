@@ -221,6 +221,35 @@
     "Goals": "7/10",
     "Saved": "cautious, cautiously, harass"
    }
+  },
+  "cb1": {
+   "n": 8.5,
+   "date": "2026-10-18",
+   "title": "Comeback Camp",
+   "total": 230,
+   "words": [],
+   "sections": {
+    "Box rule": "1/3",
+    "Long division": "3/4",
+    "Fractions": "3/5",
+    "% & decimals": "4/4",
+    "Words": "7/8",
+    "Notebook": "2/3",
+    "Referee": "+30"
+   },
+   "note": "Box rule Q2,Q3 wrong (crossing out; sense check). Long div Q1. Fractions Q3,Q4 (1½×24, 1½×57 — mixed × whole). Words: leisure."
+  },
+  "sw-2026-10-18": {
+   "n": 100,
+   "date": "2026-10-18",
+   "title": "Shoot Words",
+   "total": 80,
+   "kind": "shoot",
+   "words": [],
+   "sections": {
+    "Goals": "8/10",
+    "Saved": "frantically, harass"
+   }
   }
  },
  "reports": [
@@ -368,7 +397,7 @@
    "added": "2026-09-08",
    "status": "learning",
    "passes": 0,
-   "misses": 1,
+   "misses": 2,
    "def": "in a wild, hurried, panicky way"
   },
   {
@@ -548,7 +577,7 @@
    "added": "2026-09-12",
    "status": "learning",
    "passes": 0,
-   "misses": 1,
+   "misses": 2,
    "def": "free time when you're not working"
   },
   {
@@ -558,7 +587,7 @@
    "added": "2026-09-12",
    "status": "learning",
    "passes": 0,
-   "misses": 1,
+   "misses": 2,
    "def": "to keep bothering or attacking someone"
   },
   {
@@ -770,6 +799,26 @@
    "passes": 0,
    "misses": 1,
    "def": "the state of being real or alive"
+  },
+  {
+   "word": "endeavour",
+   "source": "school",
+   "from": "One Day vocab mat",
+   "added": "2026-10-19",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "a serious attempt or effort"
+  },
+  {
+   "word": "sufficiently",
+   "source": "school",
+   "from": "One Day vocab mat",
+   "added": "2026-10-19",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "enough; to the degree needed"
   }
  ],
  "wordbank_rules": {
@@ -862,5 +911,34 @@
    "from": "2026-10-19",
    "to": "2026-10-25"
   }
- ]
+ ],
+ "mock_sats_autumn1": {
+  "date": "2026-09 (early)",
+  "gps": {
+   "grammar": "35/50",
+   "spelling": "13/20",
+   "combined": "48/70",
+   "expected": 36,
+   "gd": 55
+  },
+  "reading": {
+   "score": "20/50",
+   "expected": 24,
+   "gd": 38
+  },
+  "maths": {
+   "arithmetic": "10/40 (later 25)",
+   "reasoning2": "11/35",
+   "reasoning3": "15/35",
+   "combined": "36/110",
+   "expected": 56,
+   "gd": 94
+  },
+  "priorities": [
+   "Reading daily 10 min + Point+Evidence",
+   "Reasoning 2x/week",
+   "Box Rule",
+   "GPS → GD: plural apostrophe, semicolons, formal/informal"
+  ]
+ }
 }
