@@ -250,6 +250,26 @@
     "Goals": "8/10",
     "Saved": "frantically, harass"
    }
+  },
+  "md9": {
+   "n": 9,
+   "date": "2026-10-19",
+   "title": "Long Division Day",
+   "total": 150,
+   "words": [
+    "endeavour",
+    "sufficiently",
+    "gracious"
+   ],
+   "sections": {
+    "VAR": "3/4",
+    "Long division": "3/4",
+    "Reading": "4/4",
+    "Words": "3/3",
+    "Q5": "2/2",
+    "Referee": "—"
+   },
+   "note": "Q5 full Point+Evidence 2/2. Missed 1½×36 and div Q4 (2002÷26)."
   }
  },
  "reports": [
@@ -819,6 +839,36 @@
    "passes": 0,
    "misses": 0,
    "def": "enough; to the degree needed"
+  },
+  {
+   "word": "compassion",
+   "source": "school",
+   "from": "One Day vocab mat",
+   "added": "2026-10-20",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "deep care for someone who is suffering"
+  },
+  {
+   "word": "benevolence",
+   "source": "school",
+   "from": "One Day vocab mat",
+   "added": "2026-10-20",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "kindness and generosity"
+  },
+  {
+   "word": "indebted",
+   "source": "school",
+   "from": "One Day vocab mat",
+   "added": "2026-10-20",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "owing thanks to someone"
   }
  ],
  "wordbank_rules": {
@@ -827,13 +877,16 @@
   "revision": "each Word Camp also re-tests 3 random secure words"
  },
  "followups": [
-  "BOX RULE: one answer, last line of working, sense check",
-  "long division by 2-digit — daily until automatic",
-  "mixed number × whole number",
-  "plural possessive apostrophe",
-  "have/had + third form",
-  "writing length: paragraph 3",
-  "fragments need a verb"
+  "BOX RULE — holding",
+  "long division — Q4-type (3 steps) still slips",
+  "mixed number × whole",
+  "inverse operations for missing number",
+  "0.5/0.25 = half/quarter",
+  "square numbers 1–12",
+  "long multiplication: check 2nd row carry",
+  "% always via 10% method",
+  "plural apostrophe",
+  "writing length / para 3"
  ],
  "arithmetic_paper": {
   "date": "2026-10-13",
@@ -939,6 +992,20 @@
    "Reasoning 2x/week",
    "Box Rule",
    "GPS → GD: plural apostrophe, semicolons, formal/informal"
+  ]
+ },
+ "arithmetic_paper_2018": {
+  "date": "2026-10",
+  "paper": "2018 KS2 Paper 1",
+  "score": "25/40",
+  "box_errors_seen": 0,
+  "long_division": "Q22 2/2 — first full 2-digit division",
+  "gaps": [
+   "inverse missing number (Q10)",
+   "0.5×28 blank (Q23)",
+   "20% via decimal fraction failed (Q21)",
+   "6²=12 (Q8)",
+   "long mult carry 2nd row (Q29)"
   ]
  }
 }
