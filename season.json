@@ -869,6 +869,36 @@
    "passes": 0,
    "misses": 0,
    "def": "owing thanks to someone"
+  },
+  {
+   "word": "relentless",
+   "source": "season",
+   "from": "md11",
+   "added": "2026-10-21",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "never stopping"
+  },
+  {
+   "word": "resolute",
+   "source": "season",
+   "from": "md11",
+   "added": "2026-10-21",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "firmly decided"
+  },
+  {
+   "word": "sanctuary",
+   "source": "season",
+   "from": "md11",
+   "added": "2026-10-21",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "a safe place; refuge"
   }
  ],
  "wordbank_rules": {
