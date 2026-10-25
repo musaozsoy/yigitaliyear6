@@ -1,7 +1,7 @@
 {
  "season": "2026/27",
  "player": "Yigit Ali",
- "updated": "2026-10-18",
+ "updated": "2026-10-25",
  "levels": [
   [
    "Castilla",
@@ -22,6 +22,11 @@
    "Ballon d'Or",
    3000,
    5000
+  ],
+  [
+   "Galáctico",
+   5000,
+   8000
   ]
  ],
  "days": {
@@ -270,6 +275,25 @@
     "Referee": "—"
    },
    "note": "Q5 full Point+Evidence 2/2. Missed 1½×36 and div Q4 (2002÷26)."
+  },
+  "md11": {
+   "n": 11,
+   "date": "2026-10-21",
+   "title": "Chapter 5 · Reading day",
+   "total": 130,
+   "words": [
+    "relentless",
+    "resolute",
+    "sanctuary"
+   ],
+   "sections": {
+    "VAR": "3/4",
+    "Reading": "6/6",
+    "Words": "2/3",
+    "Q7+Q8": "1/3 → 1/4 marks",
+    "Referee": "+30"
+   },
+   "note": "Q7: quotation doesn't match 'how' question (1/2). Q8: reason not from text (0/2). Rule: how→technique+quote; why→character's own words. 0.25×80 missed; resolute missed."
   }
  },
  "reports": [
@@ -885,9 +909,9 @@
    "source": "season",
    "from": "md11",
    "added": "2026-10-21",
-   "status": "new",
+   "status": "learning",
    "passes": 0,
-   "misses": 0,
+   "misses": 1,
    "def": "firmly decided"
   },
   {
@@ -899,6 +923,66 @@
    "passes": 0,
    "misses": 0,
    "def": "a safe place; refuge"
+  },
+  {
+   "word": "valour",
+   "source": "school",
+   "from": "One Day synonyms",
+   "added": "2026-10-22",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "great bravery"
+  },
+  {
+   "word": "apprehension",
+   "source": "school",
+   "from": "One Day synonyms",
+   "added": "2026-10-22",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "worry about what might happen"
+  },
+  {
+   "word": "refuge",
+   "source": "school",
+   "from": "One Day synonyms",
+   "added": "2026-10-22",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "a safe place"
+  },
+  {
+   "word": "awestruck",
+   "source": "season",
+   "from": "nc1",
+   "added": "2026-10-25",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "filled with amazement and wonder"
+  },
+  {
+   "word": "solemn",
+   "source": "season",
+   "from": "nc1",
+   "added": "2026-10-25",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "serious and thoughtful"
+  },
+  {
+   "word": "gratitude",
+   "source": "school",
+   "from": "nc1",
+   "added": "2026-10-25",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "the feeling of being thankful"
   }
  ],
  "wordbank_rules": {
@@ -907,16 +991,17 @@
   "revision": "each Word Camp also re-tests 3 random secure words"
  },
  "followups": [
-  "BOX RULE — holding",
-  "long division — Q4-type (3 steps) still slips",
+  "READING: HOW → technique + quote; WHY → character's own words",
+  "BOX RULE",
+  "long division (3-step)",
   "mixed number × whole",
-  "inverse operations for missing number",
-  "0.5/0.25 = half/quarter",
-  "square numbers 1–12",
-  "long multiplication: check 2nd row carry",
-  "% always via 10% method",
+  "inverse operations",
+  "0.5/0.25",
+  "squares & cubes",
+  "long mult 2nd-row carry",
+  "% via 10%",
   "plural apostrophe",
-  "writing length / para 3"
+  "Big Write 2: full letter of thanks"
  ],
  "arithmetic_paper": {
   "date": "2026-10-13",
@@ -992,7 +1077,13 @@
    "n": 3,
    "label": "Week 3",
    "from": "2026-10-19",
-   "to": "2026-10-25"
+   "to": "2026-10-24"
+  },
+  {
+   "n": 4,
+   "label": "Week 4 · Half-term camp",
+   "from": "2026-10-25",
+   "to": "2026-11-01"
   }
  ],
  "mock_sats_autumn1": {
@@ -1037,5 +1128,12 @@
    "6²=12 (Q8)",
    "long mult carry 2nd row (Q29)"
   ]
- }
+ },
+ "unreported": [
+  "md10 (20 Oct)",
+  "et3, et4 (18 Oct)",
+  "md12 (22 Oct)",
+  "sp01 + school spelling test (23 Oct)",
+  "Big Write 2 (24 Oct) — moved to Tue 27 Oct"
+ ]
 }
