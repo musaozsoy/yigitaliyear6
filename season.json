@@ -294,6 +294,93 @@
     "Referee": "+30"
    },
    "note": "Q7: quotation doesn't match 'how' question (1/2). Q8: reason not from text (0/2). Rule: how→technique+quote; why→character's own words. 0.25×80 missed; resolute missed."
+  },
+  "md8": {
+   "n": 8,
+   "date": "2026-09-14",
+   "title": "Maths Reasoning",
+   "total": 120,
+   "words": [
+    "exhausted",
+    "observed",
+    "ambitious"
+   ],
+   "sections": {
+    "VAR": "3/4",
+    "Reasoning": "1/8",
+    "Words": "3/3",
+    "Notebook": "2/2",
+    "Referee": "+30"
+   },
+   "note": "Reasoning 1/8 — biggest maths gap."
+  },
+  "et3": {
+   "n": 8.6,
+   "date": "2026-10-18",
+   "title": "Extra Training 3 · Grammar & punctuation",
+   "total": 130,
+   "kind": "extra",
+   "words": [],
+   "sections": {
+    "Drill": "11/11",
+    "Rewrite": "2/2",
+    "Referee": "—"
+   }
+  },
+  "et4": {
+   "n": 8.7,
+   "date": "2026-10-18",
+   "title": "Extra Training 4 · Fractions +/−",
+   "total": 140,
+   "kind": "extra",
+   "words": [],
+   "sections": {
+    "Drill": "9/12",
+    "Notebook": "2/2",
+    "Referee": "+30"
+   }
+  },
+  "md10": {
+   "n": 10,
+   "date": "2026-10-20",
+   "title": "Writing Sprint · Letter paragraph",
+   "total": 200,
+   "words": [
+    "compassion",
+    "benevolence",
+    "indebted"
+   ],
+   "sections": {
+    "VAR": "4/4",
+    "Reading": "4/4",
+    "Toolkit": "4/4",
+    "Paragraph": "5/5",
+    "Referee": "+30"
+   }
+  },
+  "sw-2026-10-21": {
+   "n": 100,
+   "date": "2026-10-21",
+   "title": "Shoot Words",
+   "total": 90,
+   "kind": "shoot",
+   "words": [],
+   "sections": {
+    "Goals": "9/10",
+    "Saved": "harass"
+   }
+  },
+  "sw-2026-10-25": {
+   "n": 100,
+   "date": "2026-10-25",
+   "title": "Shoot Words",
+   "total": 70,
+   "kind": "shoot",
+   "words": [],
+   "sections": {
+    "Goals": "7/10",
+    "Saved": "hesitate, bewildered, rivalry"
+   }
   }
  },
  "reports": [
@@ -469,9 +556,9 @@
    "source": "season",
    "from": "md3",
    "added": "2026-09-09",
-   "status": "new",
-   "passes": 1,
-   "misses": 0,
+   "status": "learning",
+   "passes": 0,
+   "misses": 1,
    "def": "competition between people who each want to be the best"
   },
   {
@@ -501,7 +588,7 @@
    "added": "2026-09-10",
    "status": "learning",
    "passes": 0,
-   "misses": 1,
+   "misses": 2,
    "def": "completely confused"
   },
   {
@@ -521,7 +608,7 @@
    "added": "2026-09-11",
    "status": "learning",
    "passes": 0,
-   "misses": 1,
+   "misses": 2,
    "def": "to pause before doing something because you're not sure"
   },
   {
@@ -631,7 +718,7 @@
    "added": "2026-09-12",
    "status": "learning",
    "passes": 0,
-   "misses": 2,
+   "misses": 3,
    "def": "to keep bothering or attacking someone"
   },
   {
@@ -983,6 +1070,56 @@
    "passes": 0,
    "misses": 0,
    "def": "the feeling of being thankful"
+  },
+  {
+   "word": "nutrients",
+   "source": "season",
+   "from": "md13",
+   "added": "2026-10-25",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "substances in food the body needs"
+  },
+  {
+   "word": "scarce",
+   "source": "season",
+   "from": "md13",
+   "added": "2026-10-25",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "in short supply; hard to find"
+  },
+  {
+   "word": "particular",
+   "source": "season",
+   "from": "hc1",
+   "added": "2026-10-26",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "careful and fussy about details"
+  },
+  {
+   "word": "faint",
+   "source": "season",
+   "from": "hc1",
+   "added": "2026-10-26",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "light, weak or hard to see"
+  },
+  {
+   "word": "charred",
+   "source": "season",
+   "from": "hc1",
+   "added": "2026-10-26",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "burnt and blackened by fire"
   }
  ],
  "wordbank_rules": {
@@ -1130,10 +1267,7 @@
   ]
  },
  "unreported": [
-  "md10 (20 Oct)",
-  "et3, et4 (18 Oct)",
-  "md12 (22 Oct)",
-  "sp01 + school spelling test (23 Oct)",
-  "Big Write 2 (24 Oct) — moved to Tue 27 Oct"
- ]
+  "md12, sp01, md13, md14, nc01 — not in the season save (save text was cut off after Shoot Words 26 Oct)"
+ ],
+ "score_note": "Quiz scores up to 25 Oct were played with fixed answer order (mostly B). From 26 Oct options are shuffled — scores from here are the reliable baseline."
 }
