@@ -1,7 +1,7 @@
 {
  "season": "2026/27",
  "player": "Yigit Ali",
- "updated": "2026-10-26",
+ "updated": "2026-11-02",
  "levels": [
   [
    "Castilla",
@@ -416,19 +416,19 @@
   }
  ],
  "spellings": {
-  "test": "2026-10-23",
-  "rule": "-able / -ible",
+  "test": "2026-11-06",
+  "rule": "-ant/-ance/-ancy · -ent/-ence/-ency",
   "words": [
-   "adorable",
-   "applicable",
-   "considerably",
-   "tolerable",
-   "comfortable",
-   "reasonable",
-   "enjoyable",
-   "sacrifice",
-   "secretary",
-   "mischievous"
+   "hesitant",
+   "observant",
+   "tolerance",
+   "decency",
+   "frequence",
+   "intelligence",
+   "urgency",
+   "nuisance",
+   "yacht",
+   "pronunciation"
   ],
   "last_test": {
    "date": "2026-10-09",
@@ -440,6 +440,11 @@
     "changeable",
     "existence"
    ]
+  },
+  "previous": {
+   "test": "2026-10-23",
+   "rule": "-able/-ible",
+   "result": "not reported"
   }
  },
  "extras": [
@@ -470,13 +475,6 @@
    "file": "et04.html",
    "title": "Extra Training 4 · Fractions +/−",
    "homework": "Maths · Seesaw · 12 fraction sums"
-  },
-  {
-   "id": "hc4",
-   "date": "2026-10-29",
-   "file": "hc04.html",
-   "title": "Grammar Camp · half-term homework prep",
-   "homework": "English · Autumn 1 Grammar Test (20 questions) · photo every page before handing in"
   }
  ],
  "wordcamps": [
@@ -1129,10 +1127,110 @@
    "def": "burnt and blackened by fire"
   },
   {
+   "word": "hesitant",
+   "source": "school",
+   "from": "spelling 6 Nov",
+   "added": "2026-11-02",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "unsure; slow to act"
+  },
+  {
+   "word": "observant",
+   "source": "school",
+   "from": "spelling 6 Nov",
+   "added": "2026-11-02",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "quick to notice things"
+  },
+  {
+   "word": "tolerance",
+   "source": "school",
+   "from": "spelling 6 Nov",
+   "added": "2026-11-02",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "willingness to accept or put up with something"
+  },
+  {
+   "word": "decency",
+   "source": "school",
+   "from": "spelling 6 Nov",
+   "added": "2026-11-02",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "polite, honest, respectful behaviour"
+  },
+  {
+   "word": "frequence",
+   "source": "school",
+   "from": "spelling 6 Nov",
+   "added": "2026-11-02",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "how often something happens (also: frequency)"
+  },
+  {
+   "word": "intelligence",
+   "source": "school",
+   "from": "spelling 6 Nov",
+   "added": "2026-11-02",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "the ability to learn and understand"
+  },
+  {
+   "word": "urgency",
+   "source": "school",
+   "from": "spelling 6 Nov",
+   "added": "2026-11-02",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "needing to be done quickly"
+  },
+  {
+   "word": "nuisance",
+   "source": "school",
+   "from": "spelling 6 Nov",
+   "added": "2026-11-02",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "something or someone annoying"
+  },
+  {
+   "word": "yacht",
+   "source": "school",
+   "from": "spelling 6 Nov",
+   "added": "2026-11-02",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "a large boat for sailing or racing"
+  },
+  {
+   "word": "pronunciation",
+   "source": "school",
+   "from": "spelling 6 Nov",
+   "added": "2026-11-02",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "the way a word is said"
+  },
+  {
    "word": "omit",
    "source": "season",
-   "from": "hc4",
-   "added": "2026-10-29",
+   "from": "gv1",
+   "added": "2026-11-02",
    "status": "new",
    "passes": 0,
    "misses": 0,
@@ -1141,8 +1239,8 @@
   {
    "word": "precise",
    "source": "season",
-   "from": "hc4",
-   "added": "2026-10-29",
+   "from": "gv1",
+   "added": "2026-11-02",
    "status": "new",
    "passes": 0,
    "misses": 0,
@@ -1151,8 +1249,8 @@
   {
    "word": "ambiguous",
    "source": "season",
-   "from": "hc4",
-   "added": "2026-10-29",
+   "from": "gv1",
+   "added": "2026-11-02",
    "status": "new",
    "passes": 0,
    "misses": 0,
@@ -1175,7 +1273,13 @@
   "long mult 2nd-row carry",
   "% via 10%",
   "plural apostrophe",
-  "Big Write 2: full letter of thanks"
+  "Big Write 2: full letter of thanks",
+  "GPS: main vs subordinate clause",
+  "GPS: determiners",
+  "GPS: prefixes un/im/dis",
+  "GPS: modal certainty",
+  "GPS: irregular present (got→get)",
+  "GPS: word class must match (slowly)"
  ],
  "arithmetic_paper": {
   "date": "2026-10-13",
@@ -1221,6 +1325,12 @@
    "date": "2026-10-22",
    "file": "sp01.html",
    "title": "Spelling Camp 1 · -able/-ible + last week's five"
+  },
+  {
+   "id": "sp2",
+   "date": "2026-11-05",
+   "file": "sp02.html",
+   "title": "Spelling Camp 2 · -ant/-ance/-ence/-ency + 5 pool words"
   }
  ],
  "school_unit": {
@@ -1255,9 +1365,22 @@
   },
   {
    "n": 4,
-   "label": "Week 4 · Half-term camp",
+   "label": "Week 4 · Half-term (missed)",
    "from": "2026-10-25",
    "to": "2026-11-01"
+  },
+  {
+   "n": 5,
+   "label": "Week 5 · Catch-up",
+   "from": "2026-11-02",
+   "to": "2026-11-08",
+   "note": "backlog in 30-min halves"
+  },
+  {
+   "n": 6,
+   "label": "Week 6",
+   "from": "2026-11-09",
+   "to": "2026-11-15"
   }
  ],
  "mock_sats_autumn1": {
@@ -1306,5 +1429,43 @@
  "unreported": [
   "md12, sp01, md13, md14, nc01 — not in the season save (save text was cut off after Shoot Words 26 Oct)"
  ],
- "score_note": "Quiz scores up to 25 Oct were played with fixed answer order (mostly B). From 26 Oct options are shuffled — scores from here are the reliable baseline."
+ "score_note": "Quiz scores up to 25 Oct were played with fixed answer order (mostly B). From 26 Oct options are shuffled — scores from here are the reliable baseline.",
+ "catchup_queue": [
+  "gv1",
+  "md12",
+  "md13",
+  "sp2",
+  "nc1",
+  "md14",
+  "hc1"
+ ],
+ "grammar_homework_autumn1": {
+  "date": "2026-11-02",
+  "score_est": "12/20",
+  "wrong": {
+   "Q2": "sister's ticked possession (omission)",
+   "Q7": "should (certain → will)",
+   "Q9": "in- for all three (unsure, improbable, disappoint)",
+   "Q11": "slow (slowly), kind (polite)",
+   "Q12": "underlined subordinate clause",
+   "Q14": "underlined been/and/had (determiners: Whose, your, an)",
+   "Q16": "happiest (happy)",
+   "Q20": "got → have (get)"
+  },
+  "borderline": [
+   "Q8 tick between rows",
+   "Q10 'because there is a list' (better: to separate items in a list)",
+   "Q13 wrote numbers not words"
+  ],
+  "strengths": [
+   "passive",
+   "semi-colon",
+   "agreement",
+   "hyphen meaning",
+   "parenthesis commas",
+   "inverted commas",
+   "formal",
+   "command"
+  ]
+ }
 }
