@@ -1,7 +1,7 @@
 {
  "season": "2026/27",
  "player": "Yigit Ali",
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "levels": [
   [
    "Castilla",
@@ -470,6 +470,13 @@
    "file": "et04.html",
    "title": "Extra Training 4 · Fractions +/−",
    "homework": "Maths · Seesaw · 12 fraction sums"
+  },
+  {
+   "id": "hc4",
+   "date": "2026-10-29",
+   "file": "hc04.html",
+   "title": "Grammar Camp · half-term homework prep",
+   "homework": "English · Autumn 1 Grammar Test (20 questions) · photo every page before handing in"
   }
  ],
  "wordcamps": [
@@ -1120,6 +1127,36 @@
    "passes": 0,
    "misses": 0,
    "def": "burnt and blackened by fire"
+  },
+  {
+   "word": "omit",
+   "source": "season",
+   "from": "hc4",
+   "added": "2026-10-29",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "to leave something out"
+  },
+  {
+   "word": "precise",
+   "source": "season",
+   "from": "hc4",
+   "added": "2026-10-29",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "exact and careful"
+  },
+  {
+   "word": "ambiguous",
+   "source": "season",
+   "from": "hc4",
+   "added": "2026-10-29",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "could mean more than one thing"
   }
  ],
  "wordbank_rules": {
