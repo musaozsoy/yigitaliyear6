@@ -381,6 +381,29 @@
     "Goals": "7/10",
     "Saved": "hesitate, bewildered, rivalry"
    }
+  },
+  "gv1": {
+   "n": "C",
+   "date": "2026-11-02",
+   "title": "Grammar VAR Camp · fix the eight",
+   "total": 300,
+   "kind": "camp",
+   "words": [
+    "omit",
+    "precise",
+    "ambiguous"
+   ],
+   "sections": {
+    "Clauses": "3/6",
+    "Determiners": "1/7",
+    "Word building": "5/9",
+    "Verbs & apostrophes": "2/8",
+    "Strengths": "5/7",
+    "New words": "3/3",
+    "Sheet fixes": "8/8",
+    "Referee": "+30"
+   },
+   "note": "First shuffled-answer GPS baseline. Main clause 0/3 (picks subordinate); determiners 1/7 (term unknown); modals 0/3 (will=certain); got→get, went→go missed; keeper's ready (omission) missed; unkind, imperfect, sad, quietly missed; passive and dog-eating missed in strengths."
   }
  },
  "reports": [
@@ -1274,12 +1297,12 @@
   "% via 10%",
   "plural apostrophe",
   "Big Write 2: full letter of thanks",
-  "GPS: main vs subordinate clause",
-  "GPS: determiners",
-  "GPS: prefixes un/im/dis",
-  "GPS: modal certainty",
-  "GPS: irregular present (got→get)",
-  "GPS: word class must match (slowly)"
+  "GPS PRIORITY: determiners (1/7)",
+  "GPS PRIORITY: modal certainty (0/3)",
+  "GPS PRIORITY: main clause (0/3 — picks subordinate)",
+  "GPS: irregular past→present (got/went)",
+  "GPS: 's = is (omission)",
+  "GPS: un-/im- prefixes, -ness → adjective, -ly antonyms"
  ],
  "arithmetic_paper": {
   "date": "2026-10-13",
@@ -1427,7 +1450,7 @@
   ]
  },
  "unreported": [
-  "md12, sp01, md13, md14, nc01 — not in the season save (save text was cut off after Shoot Words 26 Oct)"
+  "Device total 4315 on 2 Nov vs official 3815 — other catch-up results on the tablet not yet sent"
  ],
  "score_note": "Quiz scores up to 25 Oct were played with fixed answer order (mostly B). From 26 Oct options are shuffled — scores from here are the reliable baseline.",
  "catchup_queue": [
