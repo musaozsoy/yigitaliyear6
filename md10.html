@@ -151,17 +151,26 @@ tools:[
 const NAMES={var:"VAR",read:"Reading",tools:"Toolkit",writing:"Paragraph"};
 const S={var:0,read:0,tools:0,writing:0,bonus:0};const wrong={var:[],read:[],tools:[]};const idx={var:0,read:0,tools:0};
 /* quiz engine */
+/* answer-order engine: options shuffled each visit; the correct answer never sits in the same place 3 times running */
+const ORDER={};
+(function(){const secs=[...document.querySelectorAll("[data-quiz]")].map(e=>e.dataset.quiz).filter((v,i,a)=>a.indexOf(v)===i&&Q[v]);
+ Object.keys(Q).forEach(k=>{if(!secs.includes(k))secs.push(k)});
+ const last=[];
+ secs.forEach(sec=>Q[sec].forEach((it,i)=>{const n=it.o.length;let p,t=0;
+  do{p=[...Array(n).keys()];for(let k=n-1;k>0;k--){const r=Math.floor(Math.random()*(k+1));[p[k],p[r]]=[p[r],p[k]];}t++;}
+  while(t<100&&last.length>=2&&last[last.length-1]===last[last.length-2]&&p.indexOf(it.a)===last[last.length-1]);
+  ORDER[sec+"-"+i]=p;last.push(p.indexOf(it.a));}));})();
 function renderQ(sec){
-  const box=document.querySelector(`[data-quiz="${sec}"]`);const i=idx[sec];
+  const box=document.querySelector(`[data-quiz="${sec}"]`);if(!box)return;const i=idx[sec];
   if(i>=Q[sec].length){box.innerHTML=`<div class="card" style="text-align:center"><b>Section complete — ${S[sec]/10} / ${Q[sec].length}</b></div>`;updateNav();return;}
-  const it=Q[sec][i];
-  box.innerHTML=`<div class="card"><div class="qno">Question ${i+1} of ${Q[sec].length}</div><div class="qt">${it.q}</div>${it.o.map((o,j)=>`<button class="opt" onclick="answer('${sec}',${j})">${o}</button>`).join("")}<div class="why" id="why-${sec}"></div><button class="btn" id="nq-${sec}" style="display:none;width:100%;max-width:none;margin-top:12px" onclick="idx.${sec}++;renderQ('${sec}')">Next ›</button></div>`;
+  const it=Q[sec][i];const p=ORDER[sec+"-"+i]||[...it.o.keys()];
+  box.innerHTML=`<div class="card"><div class="qno">Question ${i+1} of ${Q[sec].length}</div><div class="qt">${it.q}</div>${p.map(j=>`<button class="opt" data-o="${j}" onclick="answer('${sec}',${j})">${it.o[j]}</button>`).join("")}<div class="why" id="why-${sec}"></div><button class="btn" id="nq-${sec}" style="display:none;width:100%;max-width:none;margin-top:12px" onclick="idx.${sec}++;renderQ('${sec}')">Next ›</button></div>`;
 }
 function answer(sec,j){
-  const it=Q[sec][idx[sec]];const opts=document.querySelectorAll(`[data-quiz="${sec}"] .opt`);
-  opts.forEach(o=>o.disabled=true);opts[it.a].classList.add("correct");
+  const it=Q[sec][idx[sec]];const opts=[...document.querySelectorAll(`[data-quiz="${sec}"] .opt`)];const by=k=>opts.find(o=>+o.dataset.o===k);
+  opts.forEach(o=>o.disabled=true);by(it.a).classList.add("correct");
   const w=document.getElementById(`why-${sec}`);
-  if(j===it.a){S[sec]+=10;w.innerHTML="<b>⚽ Goal!</b> "+it.w;}else{opts[j].classList.add("wrong");wrong[sec].push(idx[sec]+1);w.innerHTML="<b>🧤 Saved.</b> "+it.w;}
+  if(j===it.a){S[sec]+=10;w.innerHTML="<b>⚽ Goal!</b> "+it.w;}else{by(j).classList.add("wrong");wrong[sec].push(idx[sec]+1);w.innerHTML="<b>🧤 Saved.</b> "+it.w;}
   w.classList.add("show");document.getElementById(`nq-${sec}`).style.display="block";livePts();
   document.getElementById(`nq-${sec}`).scrollIntoView({behavior:"smooth",block:"end"});
 }
@@ -192,7 +201,7 @@ updateNav();
 const KEY="ya_season_v1";
 function load(){try{return JSON.parse(localStorage.getItem(KEY))||{days:{}}}catch(e){return {days:{}}}}
 function save(o){try{localStorage.setItem(KEY,JSON.stringify(o))}catch(e){}}
-function level(p){return p<500?["Castilla",0,500]:p<1500?["First XI",500,1500]:p<3000?["Captain",1500,3000]:["Ballon d'Or",3000,5000];}
+function level(p){return p<500?["Castilla",0,500]:p<1500?["First XI",500,1500]:p<3000?["Captain",1500,3000]:p<5000?["Ballon d'Or",3000,5000]:["Galáctico",5000,8000];}
 function finish(){
   const t=total();const st=load();
   if(!st.days.md1)st.days.md1={n:1,date:"2026-09-07",title:"Pre-season Trials",total:320,sections:{Reading:"6/6",Words:"3/3",Maths:"9/10",Grammar:"6/8",Science:"5/5","Writing VAR":"3/6"},words:["cautiously","peculiar","ominous"]};

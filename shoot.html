@@ -111,7 +111,7 @@ const SFX={ctx:null,on:true,crowdGain:null,init(){if(!this.ctx)try{this.ctx=new 
  kick(){if(this.on)this.tone(160,.08,'square',.12)},goal(){if(!this.on)return;this.roar();this.tone(880,.15,'triangle',.12);this.tone(1320,.25,'triangle',.12,.12);this.tone(1760,.35,'triangle',.1,.24)},save(){if(!this.on)return;this.groan();this.tone(220,.25,'sawtooth',.1);this.tone(160,.3,'sawtooth',.08,.15)}};
 const today=new Date().toISOString().slice(0,10);
 let shot=load(SKEY);if(shot.date!==today)shot={date:today,shots:0,goals:0,log:[],missed:[]};
-let cur=null,locked=false,order=[];
+let cur=null,locked=false,order=[];const LASTPOS=[];
 const ZPOS=[['25%','62%'],['75%','62%'],['25%','18%'],['75%','18%']];
 function pick(a){return a[Math.floor(Math.random()*a.length)]}
 function buildOrder(){
@@ -123,7 +123,7 @@ function next(){
   if(shot.shots>=MAX){finish();return;}
   const w=order[shot.shots];cur={word:w,ans:DICT[w]};
   const others=Object.keys(DICT).filter(x=>x!==w).sort(()=>Math.random()-.5).slice(0,3).map(x=>DICT[x]);
-  const opts=[cur.ans,...others].sort(()=>Math.random()-.5);
+  let opts,tr=0;do{opts=[cur.ans,...others].sort(()=>Math.random()-.5);tr++;}while(tr<50&&LASTPOS.length>=2&&LASTPOS[LASTPOS.length-1]===LASTPOS[LASTPOS.length-2]&&opts.indexOf(cur.ans)===LASTPOS[LASTPOS.length-1]);LASTPOS.push(opts.indexOf(cur.ans));
   const Z=document.getElementById("zones");Z.innerHTML="";
   opts.forEach((o,i)=>{const b=document.createElement("button");b.className="zone";b.textContent=o;b.onclick=()=>shoot(i,o,b);Z.appendChild(b)});
   document.getElementById("word").textContent=w;

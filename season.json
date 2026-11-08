@@ -1,7 +1,7 @@
 {
  "season": "2026/27",
  "player": "Yigit Ali",
- "updated": "2026-11-02",
+ "updated": "2026-11-08",
  "levels": [
   [
    "Castilla",
@@ -1278,6 +1278,36 @@
    "passes": 0,
    "misses": 0,
    "def": "could mean more than one thing"
+  },
+  {
+   "word": "estimate",
+   "source": "season",
+   "from": "ec1",
+   "added": "2026-11-08",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "a sensible rough answer worked out first"
+  },
+  {
+   "word": "consecutive",
+   "source": "season",
+   "from": "ec1",
+   "added": "2026-11-08",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "following one after another"
+  },
+  {
+   "word": "remainder",
+   "source": "season",
+   "from": "ec1",
+   "added": "2026-11-08",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "what is left over after dividing"
   }
  ],
  "wordbank_rules": {
@@ -1401,7 +1431,7 @@
   },
   {
    "n": 6,
-   "label": "Week 6",
+   "label": "Week 6 · Catch-up 2",
    "from": "2026-11-09",
    "to": "2026-11-15"
   }
@@ -1454,12 +1484,12 @@
  ],
  "score_note": "Quiz scores up to 25 Oct were played with fixed answer order (mostly B). From 26 Oct options are shuffled — scores from here are the reliable baseline.",
  "catchup_queue": [
-  "gv1",
+  "ec1",
   "md12",
   "md13",
+  "md14",
   "sp2",
   "nc1",
-  "md14",
   "hc1"
  ],
  "grammar_homework_autumn1": {
