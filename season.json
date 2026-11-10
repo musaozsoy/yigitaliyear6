@@ -1,7 +1,7 @@
 {
  "season": "2026/27",
  "player": "Yigit Ali",
- "updated": "2026-11-08",
+ "updated": "2026-11-10",
  "levels": [
   [
    "Castilla",
@@ -404,6 +404,100 @@
     "Referee": "+30"
    },
    "note": "First shuffled-answer GPS baseline. Main clause 0/3 (picks subordinate); determiners 1/7 (term unknown); modals 0/3 (will=certain); got→get, went→go missed; keeper's ready (omission) missed; unkind, imperfect, sad, quietly missed; passive and dog-eating missed in strengths."
+  },
+  "sw-2026-10-26": {
+   "n": 100,
+   "date": "2026-10-26",
+   "title": "Shoot Words",
+   "total": 60,
+   "kind": "shoot",
+   "words": [],
+   "sections": {
+    "Goals": "6/10",
+    "Saved": "reluctantly, superstitious, hesitate, ominous"
+   }
+  },
+  "nc1": {
+   "n": "C",
+   "date": "2026-10-25",
+   "title": "New Season Camp",
+   "total": 440,
+   "words": [
+    "awestruck",
+    "solemn",
+    "gratitude"
+   ],
+   "kind": "camp",
+   "sections": {
+    "VAR": "4/4",
+    "Chapter 6": "6/6",
+    "Arithmetic": "8/14",
+    "Grammar": "7/10",
+    "Word pool": "8/8",
+    "New words": "3/3",
+    "Notebook": "5/5",
+    "Referee": "+30"
+   },
+   "note": "Reading + how/why fix landed (VAR 4/4, Ch6 6/6). Arithmetic misses: inverse missing number (☐−48=152), 0.5×86, 1½×44, 5/6÷5, 2,397÷51, 0.7×500 sense check. Grammar misses: children's (plural apostrophe), antonym danger→safety, 'have done'. Re-tested in hc1 VAR."
+  },
+  "gw-2026-11-03": {
+   "n": 100,
+   "date": "2026-11-03",
+   "title": "Grammar 5",
+   "total": 20,
+   "kind": "warmup",
+   "words": [],
+   "sections": {
+    "Determiners": "2/2",
+    "Modal verbs": "0/1",
+    "Main clause": "0/1",
+    "Mixed": "0/1"
+   }
+  },
+  "sw-2026-11-03": {
+   "n": 100,
+   "date": "2026-11-03",
+   "title": "Shoot Words",
+   "total": 90,
+   "kind": "shoot",
+   "words": [],
+   "sections": {
+    "Goals": "9/10",
+    "Saved": "resolute"
+   }
+  },
+  "sp1": {
+   "n": 12.5,
+   "date": "2026-11-09",
+   "title": "Spelling Camp 1",
+   "total": 210,
+   "words": [],
+   "kind": "spelling",
+   "sections": {
+    "Rule": "3/6",
+    "Practise": "140 pts",
+    "Mock test": "1/2",
+    "Referee": "+30",
+    "Watch on Friday": "none"
+   }
+  },
+  "md12": {
+   "n": 12,
+   "date": "2026-11-09",
+   "title": "Arithmetic Sprint",
+   "total": 140,
+   "words": [
+    "valour",
+    "apprehension",
+    "refuge"
+   ],
+   "sections": {
+    "VAR": "0/2",
+    "Arithmetic": "7/16",
+    "Synonyms": "4/6",
+    "Words": "3/3"
+   },
+   "note": "Arithmetic 7/16, VAR 0/2 — weakest arithmetic since September; played after a 2-week gap."
   }
  },
  "reports": [
@@ -439,34 +533,23 @@
   }
  ],
  "spellings": {
-  "test": "2026-11-06",
-  "rule": "-ant/-ance/-ancy · -ent/-ence/-ency",
+  "test": "2026-11-13",
+  "rule": "-fer + vowel suffix: stress on fer → double r",
   "words": [
-   "hesitant",
-   "observant",
-   "tolerance",
-   "decency",
-   "frequence",
-   "intelligence",
-   "urgency",
-   "nuisance",
-   "yacht",
-   "pronunciation"
+   "inferring",
+   "referred",
+   "referral",
+   "transferring",
+   "sufferable",
+   "buffered",
+   "offering",
+   "neighbour",
+   "correspond",
+   "disastrous"
   ],
-  "last_test": {
-   "date": "2026-10-09",
-   "score": "5/10",
-   "missed": [
-    "manageable",
-    "noticeable",
-    "committee",
-    "changeable",
-    "existence"
-   ]
-  },
   "previous": {
-   "test": "2026-10-23",
-   "rule": "-able/-ible",
+   "test": "2026-11-06",
+   "rule": "-ant/-ance/-ancy · -ent/-ence/-ency",
    "result": "not reported"
   }
  },
@@ -1308,6 +1391,106 @@
    "passes": 0,
    "misses": 0,
    "def": "what is left over after dividing"
+  },
+  {
+   "word": "inferring",
+   "source": "school",
+   "from": "spelling 13 Nov",
+   "added": "2026-11-10",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "working something out from clues"
+  },
+  {
+   "word": "referred",
+   "source": "school",
+   "from": "spelling 13 Nov",
+   "added": "2026-11-10",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "mentioned or pointed to"
+  },
+  {
+   "word": "referral",
+   "source": "school",
+   "from": "spelling 13 Nov",
+   "added": "2026-11-10",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "sending someone on to an expert"
+  },
+  {
+   "word": "transferring",
+   "source": "school",
+   "from": "spelling 13 Nov",
+   "added": "2026-11-10",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "moving from one place or team to another"
+  },
+  {
+   "word": "sufferable",
+   "source": "school",
+   "from": "spelling 13 Nov",
+   "added": "2026-11-10",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "able to be put up with"
+  },
+  {
+   "word": "buffered",
+   "source": "school",
+   "from": "spelling 13 Nov",
+   "added": "2026-11-10",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "protected from a shock"
+  },
+  {
+   "word": "offering",
+   "source": "school",
+   "from": "spelling 13 Nov",
+   "added": "2026-11-10",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "holding out something to be taken"
+  },
+  {
+   "word": "neighbour",
+   "source": "school",
+   "from": "spelling 13 Nov",
+   "added": "2026-11-10",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "a person living next door"
+  },
+  {
+   "word": "correspond",
+   "source": "school",
+   "from": "spelling 13 Nov",
+   "added": "2026-11-10",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "to write letters to each other; to match"
+  },
+  {
+   "word": "disastrous",
+   "source": "school",
+   "from": "spelling 13 Nov",
+   "added": "2026-11-10",
+   "status": "new",
+   "passes": 0,
+   "misses": 0,
+   "def": "very bad, causing great damage"
   }
  ],
  "wordbank_rules": {
@@ -1384,6 +1567,12 @@
    "date": "2026-11-05",
    "file": "sp02.html",
    "title": "Spelling Camp 2 · -ant/-ance/-ence/-ency + 5 pool words"
+  },
+  {
+   "id": "sp3",
+   "date": "2026-11-12",
+   "file": "sp03.html",
+   "title": "Spelling Camp 3 · -fer words + 5 pool words"
   }
  ],
  "school_unit": {
@@ -1479,16 +1668,14 @@
    "long mult carry 2nd row (Q29)"
   ]
  },
- "unreported": [
-  "Device total 4315 on 2 Nov vs official 3815 — other catch-up results on the tablet not yet sent"
- ],
+ "unreported": [],
  "score_note": "Quiz scores up to 25 Oct were played with fixed answer order (mostly B). From 26 Oct options are shuffled — scores from here are the reliable baseline.",
  "catchup_queue": [
   "ec1",
   "md12",
   "md13",
   "md14",
-  "sp2",
+  "sp3",
   "nc1",
   "hc1"
  ],
