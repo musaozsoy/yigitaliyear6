@@ -145,7 +145,7 @@ const NAMES={det:"Determiners",mod:"Modal verbs",mc:"Main clause",sec:"Mixed"};
 const TODAY=new Date().toISOString().slice(0,10);
 const GK="ya_gw_v1",KEY="ya_season_v1";
 const next=(new URLSearchParams(location.search).get("next")||"").replace(/[^a-z0-9.\-]/gi,"");
-if(next)document.getElementById("go").href=next;
+document.getElementById("go").href="aw.html"+(next?"?next="+next:"");document.getElementById("go").textContent="Next: Maths 5 ›";
 function ld(k,d){try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}}
 function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
 const G=ld(GK,{missed:[],seen:{},last:{}});
@@ -172,6 +172,15 @@ function end(){document.getElementById("box").style.display="none";document.getE
  document.getElementById("msg").innerHTML=sc===5?"Perfect warm-up: +10 bonus. Now the main match.":sc>=3?"Good. The ones you missed come back tomorrow.":"Tough warm-up. Read the yellow rule boxes once more, then kick off.";}
 if(G.last.done){i=5;end();}else render();
 const COACH_WHATSAPP="447341974350";
-function sendToBaba(){const d=ld(KEY,{days:{}}).days["gw-"+TODAY];const rep={app:"ya-season",type:"warmup-report",id:"gw-"+TODAY,date:TODAY,title:"Grammar 5",total:d?d.total:0,sections:d?d.sections:{},missed_pool:G.missed.length};window.location.href="https://wa.me/"+COACH_WHATSAPP+"?text="+encodeURIComponent(JSON.stringify(rep,null,1));}
+/* send to Baba as a file: phones open the share sheet → WhatsApp → Baba; a file never gets cut short like pasted text */
+async function shareText(text,tag){
+ const day=new Date().toISOString().slice(0,10);
+ const base="yigit-"+(tag||(typeof MD!=="undefined"&&MD.id)||"report")+"-"+day;
+ const tries=[new File([text],base+".json",{type:"application/json"}),new File([text],base+".txt",{type:"text/plain"})];
+ for(const f of tries){try{if(navigator.canShare&&navigator.canShare({files:[f]})){await navigator.share({files:[f],title:base});return;}}catch(e){if(e&&e.name==="AbortError")return;}}
+ const f=tries[0];const a=document.createElement("a");a.href=URL.createObjectURL(f);a.download=f.name;document.body.appendChild(a);a.click();a.remove();
+ setTimeout(()=>{location.href="https://wa.me/"+COACH_WHATSAPP+"?text="+encodeURIComponent("📎 "+f.name+" downloaded. Attach it here.")},900);
+}
+function sendToBaba(){const d=ld(KEY,{days:{}}).days["gw-"+TODAY];const rep={app:"ya-season",type:"warmup-report",id:"gw-"+TODAY,date:TODAY,title:"Grammar 5",total:d?d.total:0,sections:d?d.sections:{},missed_pool:G.missed.length};shareText(JSON.stringify(rep,null,1),"gw");}
 </script>
 </body></html>
