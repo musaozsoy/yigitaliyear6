@@ -239,7 +239,16 @@ function finish(){
 function reportObj(){const st=load();const d=st.days[MD.id];const season=Object.values(st.days).reduce((a,x)=>a+x.total,0);const rep={app:"ya-season",type:"matchday-report",md:MD.n,id:MD.id,date:MD.date,title:MD.title,total:d.total,sections:d.sections,wrong:{},words:MD.words,season_total_on_device:season,exported:new Date().toISOString()};Object.keys(wrong).forEach(k=>{if(wrong[k].length)rep.wrong[NAMES[k]||k]=wrong[k]});return rep;}
 function reportName(){return `md${String(MD.n).padStart(2,"0")}-${MD.date}.json`;}
 const COACH_WHATSAPP="447341974350";
-function sendToBaba(){const text=JSON.stringify(reportObj(),null,1);window.location.href="https://wa.me/"+COACH_WHATSAPP+"?text="+encodeURIComponent(text);}
+/* send to Baba as a file: phones open the share sheet → WhatsApp → Baba; a file never gets cut short like pasted text */
+async function shareText(text,tag){
+ const day=new Date().toISOString().slice(0,10);
+ const base="yigit-"+(tag||(typeof MD!=="undefined"&&MD.id)||"report")+"-"+day;
+ const tries=[new File([text],base+".json",{type:"application/json"}),new File([text],base+".txt",{type:"text/plain"})];
+ for(const f of tries){try{if(navigator.canShare&&navigator.canShare({files:[f]})){await navigator.share({files:[f],title:base});return;}}catch(e){if(e&&e.name==="AbortError")return;}}
+ const f=tries[0];const a=document.createElement("a");a.href=URL.createObjectURL(f);a.download=f.name;document.body.appendChild(a);a.click();a.remove();
+ setTimeout(()=>{location.href="https://wa.me/"+COACH_WHATSAPP+"?text="+encodeURIComponent("📎 "+f.name+" downloaded. Attach it here.")},900);
+}
+function sendToBaba(){const text=JSON.stringify(reportObj(),null,1);shareText(text,null);}
 function shareReport(){const text=JSON.stringify(reportObj(),null,1);
   if(navigator.share){navigator.share({title:reportName(),text:text}).catch(()=>{});}
   else copyReport();}

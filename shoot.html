@@ -83,6 +83,15 @@ h1,h2,.disp{font-family:'Bebas Neue',Impact,'Arial Narrow',sans-serif;font-weigh
 
 <script>
 const COACH_WHATSAPP="447341974350";const KEY="ya_season_v1";const SKEY="ya_shoot_v1";const MAX=10;
+/* send to Baba as a file: phones open the share sheet → WhatsApp → Baba; a file never gets cut short like pasted text */
+async function shareText(text,tag){
+ const day=new Date().toISOString().slice(0,10);
+ const base="yigit-"+(tag||(typeof MD!=="undefined"&&MD.id)||"report")+"-"+day;
+ const tries=[new File([text],base+".json",{type:"application/json"}),new File([text],base+".txt",{type:"text/plain"})];
+ for(const f of tries){try{if(navigator.canShare&&navigator.canShare({files:[f]})){await navigator.share({files:[f],title:base});return;}}catch(e){if(e&&e.name==="AbortError")return;}}
+ const f=tries[0];const a=document.createElement("a");a.href=URL.createObjectURL(f);a.download=f.name;document.body.appendChild(a);a.click();a.remove();
+ setTimeout(()=>{location.href="https://wa.me/"+COACH_WHATSAPP+"?text="+encodeURIComponent("📎 "+f.name+" downloaded. Attach it here.")},900);
+}
 /* Embedded fallback dictionary — season.json wordbank[].def wins when reachable */
 let DICT={
 cautiously:"in a careful way, worried something might go wrong",peculiar:"strange or unusual",ominous:"making you feel something bad is about to happen",
@@ -165,7 +174,7 @@ function finish(){
   /* record into season points: 10 per goal */
   const st=load(KEY);st.days=st.days||{};st.days["sw-"+today]={n:100,date:today,title:"Shoot Words",total:shot.goals*10,kind:"shoot",words:[],sections:{Goals:`${shot.goals}/${MAX}`,Saved:shot.missed.join(", ")||"none"}};save(KEY,st);
 }
-function sendToBaba(){const rep={app:"ya-season",type:"shoot-words",date:today,goals:shot.goals,shots:shot.shots,saved:shot.missed,exported:new Date().toISOString()};location.href="https://wa.me/"+COACH_WHATSAPP+"?text="+encodeURIComponent(JSON.stringify(rep,null,1));}
+function sendToBaba(){const rep={app:"ya-season",type:"shoot-words",date:today,goals:shot.goals,shots:shot.shots,saved:shot.missed,exported:new Date().toISOString()};shareText(JSON.stringify(rep,null,1),"shoot");}
 /* boot: try season.json for the live pool */
 fetch("season.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.wordbank){j.wordbank.forEach(x=>{if(x.def)DICT[x.word]=x.def;STATUS[x.word]=x.status||"new";});}}).catch(()=>{}).finally(()=>{
   drawPens();
